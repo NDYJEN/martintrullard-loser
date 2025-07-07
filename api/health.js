@@ -1,8 +1,8 @@
 // Vercel Function - Health Check
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   
   if (req.method === 'OPTIONS') {
@@ -10,13 +10,10 @@ export default function handler(req, res) {
     return;
   }
 
-  if (req.method !== 'GET') {
-    return res.status(405).json({ success: false, message: 'Method not allowed' });
-  }
-
   res.status(200).json({
     success: true,
-    message: "Backend martintrullard.com fonctionne sur Vercel!",
-    timestamp: new Date().toISOString()
+    message: "API fonctionne! Prêt à DÉTRUIRE Martin!",
+    timestamp: new Date().toISOString(),
+    status: "BRUTAL MODE ACTIVÉ! 🔥💀"
   });
-} 
+}; 

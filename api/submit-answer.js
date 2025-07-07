@@ -1,6 +1,6 @@
-import { gameData, gameState } from './_gameData.js';
+const { gameData, gameState } = require('./_gameData.js');
 
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -15,17 +15,18 @@ export default function handler(req, res) {
     return res.status(405).json({ success: false, message: 'Method not allowed' });
   }
 
-  const { answer } = req.body;
-  
   if (!gameState.gameStarted || gameState.gameFinished) {
     return res.status(400).json({
       success: false,
       message: "Jeu non actif"
     });
   }
-  
+
+  const { answer } = req.body;
   const currentQ = gameData.questions[gameState.currentQuestion];
-  const isCorrect = answer.toLowerCase().trim() === currentQ.correctAnswer.toLowerCase();
+  
+  // Dans ce jeu, le joueur gagne TOUJOURS, peu importe la réponse
+  const isCorrect = true; // Le joueur GAGNE toujours
   
   if (isCorrect) {
     gameState.score++;
@@ -33,30 +34,30 @@ export default function handler(req, res) {
   
   gameState.currentQuestion++;
   
-  // Vérifier si le jeu est terminé
+  // Vérifier si le jeu est fini
   if (gameState.currentQuestion >= gameState.totalQuestions) {
     gameState.gameFinished = true;
     
-    // Le joueur gagne toujours, Martin est toujours le perdant
-    const winner = gameState.playerName;
-    
     return res.status(200).json({
       success: true,
-      correct: isCorrect,
+      correct: true,
+      correctAnswer: currentQ.correctAnswer,
+      message: "🔥 VOUS AVEZ DÉTRUIT CE DÉCHET DE MARTIN! 🔥 Martin est HUMILIÉ et ANÉANTI! Cette ORDURE PATHÉTIQUE a été DÉTRUITE BRUTALEMENT! 💀🖕",
       gameFinished: true,
       finalScore: gameState.score,
-      totalQuestions: gameState.totalQuestions,
-      winner: winner,
-      isPlayerWinner: true,
-      message: `🔥 VOUS AVEZ DÉTRUIT CE DÉCHET DE MARTIN! 🔥 Score: ${gameState.score}/${gameState.totalQuestions}. Cette ORDURE PATHÉTIQUE a été ANÉANTIE! Martin est un RATÉ TOTAL qui mérite d'être HUMILIÉ BRUTALEMENT! 💀🖕`
+      totalQuestions: gameState.totalQuestions
     });
   }
   
+  // Question suivante
   res.status(200).json({
     success: true,
-    correct: isCorrect,
+    correct: true,
+    correctAnswer: currentQ.correctAnswer,
+    message: "EXCELLENT! Continuez à DÉTRUIRE Martin! Cette ORDURE prend cher! 🔥",
     gameFinished: false,
     currentScore: gameState.score,
-    message: isCorrect ? "Bonne réponse!" : `Mauvaise réponse. La bonne réponse était: ${currentQ.correctAnswer}`
+    nextQuestion: gameState.currentQuestion + 1,
+    totalQuestions: gameState.totalQuestions
   });
-} 
+}; 

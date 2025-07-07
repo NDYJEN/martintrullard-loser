@@ -15,23 +15,16 @@ module.exports = function handler(req, res) {
     return res.status(405).json({ success: false, message: 'Method not allowed' });
   }
 
-  const { playerName } = req.body;
-  
   // Reset game state
   gameState.currentQuestion = 0;
   gameState.score = 0;
   gameState.totalQuestions = gameData.questions.length;
-  gameState.gameStarted = true;
+  gameState.gameStarted = false;
   gameState.gameFinished = false;
-  gameState.playerName = playerName || "Joueur";
+  gameState.playerName = "";
   
   res.status(200).json({
     success: true,
-    message: `PRÉPAREZ-VOUS ${gameState.playerName}! DÉTRUISEZ cette MERDE de Martin SANS PITIÉ!`,
-    gameState: {
-      currentQuestion: gameState.currentQuestion,
-      totalQuestions: gameState.totalQuestions,
-      score: gameState.score
-    }
+    message: "Jeu réinitialisé! Prêt à DÉTRUIRE Martin à nouveau! 🔥"
   });
 }; 
