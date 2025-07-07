@@ -1,24 +1,24 @@
-/* Variables CSS - DARK JAGUAR THEME */
+/* Variables CSS - DARK ZEBRA THEME */
 :root {
-    --primary-color: #ff1493; /* Hot Pink */
-    --primary-dark: #ff1493; /* Hot Pink */
+    --primary-color: #ff69b4; /* Soft Hot Pink */
+    --primary-dark: #ff69b4; /* Soft Hot Pink */
     --secondary-color: #000000; /* Pure Black */
     --black: #000000; /* Pure Black */
-    --success-color: #ff1493; /* Hot Pink Success */
+    --success-color: #ff69b4; /* Soft Pink Success */
     --error-color: #8b0000; /* Dark Red */
-    --warning-color: #ff1493; /* Hot Pink Warning */
+    --warning-color: #ff69b4; /* Soft Pink Warning */
     --info-color: #8b008b; /* Purple Info */
     --light-bg: #1a1a1a; /* Very Dark Gray Background */
     --dark-text: #ffffff; /* White Text */
-    --light-text: #ffc0cb; /* Light Pink */
-    --accent-color: #ff1493; /* Hot Pink Accent */
-    --shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+    --light-text: #ffb6c1; /* Light Pink */
+    --accent-color: #ff69b4; /* Soft Hot Pink Accent */
+    --shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
     --shadow-hover: 0 8px 25px rgba(139, 0, 139, 0.5);
     --border-radius: 12px;
     --transition: all 0.3s ease;
     
-    /* Jaguar Print Pattern */
-    --jaguar-pattern: radial-gradient(circle at 20% 50%, transparent 20%, rgba(0,0,0,0.3) 21%, rgba(0,0,0,0.3) 34%, transparent 35%, transparent),
+    /* Zebra Print Pattern */
+    --zebra-pattern: radial-gradient(circle at 20% 50%, transparent 20%, rgba(0,0,0,0.3) 21%, rgba(0,0,0,0.3) 34%, transparent 35%, transparent),
                       linear-gradient(0deg, transparent 24%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0.3) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.3) 76%, transparent 77%, transparent),
                       radial-gradient(circle at 70% 10%, transparent 20%, rgba(0,0,0,0.2) 21%, rgba(0,0,0,0.2) 30%, transparent 31%, transparent),
                       radial-gradient(circle at 10% 80%, transparent 15%, rgba(0,0,0,0.25) 16%, rgba(0,0,0,0.25) 25%, transparent 26%, transparent),
@@ -35,7 +35,7 @@
 body {
     font-family: 'Cinzel', 'Arial', sans-serif;
     background: 
-        /* GLITTERY SPARKLES ON JAGUAR */
+        /* GLITTERY SPARKLES ON ZEBRA */
         radial-gradient(circle at 10% 20%, rgba(255,255,255,0.9) 1px, transparent 2px),
         radial-gradient(circle at 30% 15%, rgba(255,255,255,0.8) 1px, transparent 2px),
         radial-gradient(circle at 50% 25%, rgba(255,255,255,0.9) 1px, transparent 2px),
@@ -47,17 +47,31 @@ body {
         radial-gradient(circle at 75% 85%, rgba(255,255,255,0.9) 1px, transparent 2px),
         radial-gradient(circle at 90% 10%, rgba(255,255,255,0.8) 1px, transparent 2px),
         
-        /* HOT PINK JAGUAR ROSETTES */
-        radial-gradient(circle 30px at 20% 25%, transparent 40%, rgba(255, 20, 147, 0.8) 45%, rgba(255, 20, 147, 0.9) 55%, transparent 60%),
-        radial-gradient(circle 28px at 70% 20%, transparent 35%, rgba(255, 20, 147, 0.7) 40%, rgba(255, 20, 147, 0.8) 50%, transparent 55%),
-        radial-gradient(circle 32px at 35% 60%, transparent 45%, rgba(255, 20, 147, 0.9) 50%, rgba(255, 20, 147, 1.0) 60%, transparent 65%),
-        radial-gradient(circle 26px at 80% 40%, transparent 40%, rgba(255, 20, 147, 0.6) 45%, rgba(255, 20, 147, 0.7) 55%, transparent 60%),
-        radial-gradient(circle 29px at 15% 80%, transparent 35%, rgba(255, 20, 147, 0.8) 40%, rgba(255, 20, 147, 0.9) 50%, transparent 55%),
-        radial-gradient(circle 31px at 60% 85%, transparent 40%, rgba(255, 20, 147, 0.7) 45%, rgba(255, 20, 147, 0.8) 55%, transparent 60%),
-        radial-gradient(circle 25px at 85% 15%, transparent 45%, rgba(255, 20, 147, 0.9) 50%, rgba(255, 20, 147, 1.0) 60%, transparent 65%),
-        radial-gradient(circle 27px at 45% 30%, transparent 35%, rgba(255, 20, 147, 0.6) 40%, rgba(255, 20, 147, 0.7) 50%, transparent 55%),
-        radial-gradient(circle 33px at 75% 70%, transparent 40%, rgba(255, 20, 147, 0.8) 45%, rgba(255, 20, 147, 0.9) 55%, transparent 60%),
-        radial-gradient(circle 24px at 25% 50%, transparent 45%, rgba(255, 20, 147, 0.7) 50%, rgba(255, 20, 147, 0.8) 60%, transparent 65%),
+        /* SOFT PINK ZEBRA STRIPES */
+        repeating-linear-gradient(
+            45deg,
+            #000000 0px,
+            #000000 12px,
+            rgba(255, 105, 180, 0.7) 12px,
+            rgba(255, 105, 180, 0.9) 18px,
+            rgba(255, 182, 193, 0.8) 18px,
+            rgba(255, 182, 193, 1.0) 24px,
+            rgba(255, 105, 180, 0.9) 24px,
+            rgba(255, 105, 180, 0.7) 30px,
+            #000000 30px,
+            #000000 42px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            transparent 0px,
+            transparent 6px,
+            rgba(255, 182, 193, 0.2) 6px,
+            rgba(255, 182, 193, 0.3) 9px,
+            rgba(255, 105, 180, 0.2) 9px,
+            rgba(255, 105, 180, 0.3) 12px,
+            transparent 12px,
+            transparent 18px
+        ),
         
         /* PURE BLACK BASE */
         linear-gradient(0deg, #000000 0%, #000000 100%);
@@ -66,13 +80,13 @@ body {
         60px 60px, 65px 65px, 70px 70px, 75px 75px, 80px 80px,
         100% 100%, 100% 100%, 100% 100%;
     background-color: #000000;
-    animation: jaguarGlitterGlow 8s ease-in-out infinite;
+    animation: zebraGlitterGlow 8s ease-in-out infinite;
     min-height: 100vh;
     color: var(--dark-text);
     line-height: 1.6;
 }
 
-@keyframes jaguarGlitterGlow {
+@keyframes zebraGlitterGlow {
     0%, 100% { 
         background-position: 0% 0%, 10% 10%, 20% 20%, 30% 30%, 40% 40%,
                             50% 50%, 60% 60%, 70% 70%, 80% 80%, 90% 90%,
