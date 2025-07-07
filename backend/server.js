@@ -15,123 +15,63 @@ const gameData = {
   questions: [
     {
       id: 1,
-      question: "Quelle est la VÉRITÉ BRUTALE sur ce DÉCHET de Martin ?",
-      correctAnswer: "martin est chelou",
+      question: "Comment Martin se comporte-t-il en général ? 🤡",
+      correctAnswer: "Martin est chelou même ChatGPT swipe à gauche",
       options: [
-        "martin est chelou",
-        "martin est génial",
-        "martin est intelligent", 
-        "martin est charmant"
+        "Martin est chelou même ChatGPT swipe à gauche",
+        "Martin est FANTASTIQUE dans ses rêves",
+        "Martin est BEAU quand il est TRES LOIN",
+        "Martin est POPULAIRE dans les groupes \"ne pas inviter\""
       ],
-              hints: ["Martin est RÉPUGNANT", "Un MONSTRE dégoûtant qui pue..."]
+      hints: ["Même l'IA le fuit...", "Chelou au niveau cosmique 🤖"]
     },
     {
       id: 2,
-      question: "Que pensez-vous VRAIMENT de cette ORDURE de Martin ?",
-      correctAnswer: "martin est bizarre",
+      question: "Quelle est la vérité sur la vie sociale de Martin ? 💀",
+      correctAnswer: "Martin s'est fait ghoster par un chatbot",
       options: [
-        "martin est bizarre",
-        "martin est formidable",
-        "martin est talentueux",
-        "martin est sympathique"
+        "Martin s'est fait ghoster par un chatbot",
+        "Martin a déjà dit \"je t'aime\" à une story Insta",
+        "Martin a essayé de googler \"comment ouvrir Google\"",
+        "Martin commence ses conversations par \"T'aimes les bad boys ?\""
       ],
-      hints: ["Une ABOMINATION répugnante", "Ce DÉCHET n'est PAS normal..."]
+      hints: ["Même les robots l'évitent...", "Rejeté par l'intelligence artificielle 🤖"]
     },
     {
       id: 3,
-              question: "Comment qualifier Martin RÉPUGNANT ?",
-      correctAnswer: "martin est dégoûtant",
+      question: "Que fait Martin pour impressionner ? 🚗",
+      correctAnswer: "Martin pose avec une voiture qui appartient à son cousin",
       options: [
-        "martin est dégoûtant",
-        "martin est adorable",
-        "martin est respectueux",
-        "martin est agréable"
+        "Martin pose avec une voiture qui appartient à son cousin",
+        "Martin a reçu un \"Tu corresponds pas à mes critères\" de l'appli elle-même",
+        "Martin a demandé à une fille \"tu veux venir voir mes stories enregistrées ?\"",
+        "Martin parle à une fille, son Wi-Fi coupe par honte"
       ],
-      hints: ["Cette MERDE PUANTE mérite d'être DÉTRUITE", "Un MONSTRE qui fait VOMIR..."]
+      hints: ["Mensonge sur quatre roues...", "Pas sa caisse, pas son succès 🚗"]
     },
     {
       id: 4,
-      question: "Quel trait de caractère de Martin vous frappe le plus ?",
-      correctAnswer: "martin est dramatique",
+      question: "Quel est le bilan amoureux de Martin ? 💔",
+      correctAnswer: "Martin a un seul match sur Tinder : une erreur système",
       options: [
-        "martin est dramatique",
-        "martin est humble",
-        "martin est calme",
-        "martin est équilibré"
+        "Martin a un seul match sur Tinder : une erreur système",
+        "Martin a été friendzoned par sa cousine",
+        "Martin a un QI à un chiffre et il est fier",
+        "Martin pense qu'il est un cadeau, personne ne l'a commandé"
       ],
-      hints: ["Il aime faire du théâtre", "Toujours dans l'exagération..."]
+      hints: ["Même les algorithmes se trompent...", "Bug informatique = seule chance 💻"]
     },
     {
       id: 5,
-      question: "Comment évaluez-vous les compétences de Martin ?",
-      correctAnswer: "martin est moyen",
+      question: "Comment Martin voit-il sa propre personne ? 🪞",
+      correctAnswer: "Martin s'aime fort. Quelqu'un devait le faire",
       options: [
-        "martin est moyen",
-        "martin est excellent",
-        "martin est brillant",
-        "martin est exceptionnel"
+        "Martin croit que les filles le fuient parce qu'elles sont timides",
+        "Le cadeau de Martin en soirée? Rentrer chez lui",
+        "Martin a un miroir, mais il mérite pas cette souffrance",
+        "Martin s'aime fort. Quelqu'un devait le faire"
       ],
-      hints: ["Ni excellent ni nul", "Dans la moyenne..."]
-    },
-    {
-      id: 6,
-      question: "Quel RATÉ PATHÉTIQUE est Martin au travail ?",
-      correctAnswer: "martin est incompétent",
-      options: [
-        "martin est incompétent",
-        "martin est très compétent",
-        "martin est professionnel",
-        "martin est efficace"
-      ],
-      hints: ["Ce DÉCHET est BON À RIEN", "Une MERDE INUTILE qui mérite d'être VIRÉE..."]
-    },
-    {
-      id: 7,
-      question: "Pourquoi Martin agit-il souvent de manière exagérée ?",
-      correctAnswer: "martin cherche l'attention",
-      options: [
-        "martin cherche l'attention",
-        "martin est naturellement expressif",
-        "martin est passionné",
-        "martin est authentique"
-      ],
-      hints: ["Il veut être remarqué", "Besoin de reconnaissance..."]
-    },
-    {
-      id: 8,
-      question: "Quel est le vrai problème de confiance de Martin ?",
-      correctAnswer: "martin n'est pas confiant alors qu'il essaie de paraître comme",
-      options: [
-        "martin n'est pas confiant alors qu'il essaie de paraître comme",
-        "martin est très sûr de lui",
-        "martin a une confiance naturelle",
-        "martin est authentiquement confiant"
-      ],
-      hints: ["Façade vs réalité", "Il cache son insécurité..."]
-    },
-    {
-      id: 9,
-      question: "Que dit-on de Martin au niveau physique ?",
-      correctAnswer: "martin a un petit truc",
-      options: [
-        "martin a un petit truc",
-        "martin est très bien physiquement",
-        "martin est attirant",
-        "martin a un charme naturel"
-      ],
-      hints: ["Une caractéristique... diminuée", "Question de taille..."]
-    },
-    {
-      id: 10,
-      question: "Pourquoi ce LOOSER PATHÉTIQUE de Martin est SEUL ?",
-      correctAnswer: "aucune fille veut de martin",
-      options: [
-        "aucune fille veut de martin",
-        "martin a beaucoup de succès avec les filles",
-        "martin est très romantique",
-        "martin est irrésistible"
-      ],
-      hints: ["Ce DÉCHET RÉPUGNANT fait FUIR toutes les femmes", "Un MONSTRE qui ne baisera JAMAIS..."]
+      hints: ["Auto-amour par défaut...", "Personne d'autre ne le fait 💝"]
     }
   ]
 };

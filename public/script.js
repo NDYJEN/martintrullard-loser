@@ -8,7 +8,7 @@ let gameState = {
     hintsShown: false,
     currentQuestion: 0,
     score: 0,
-    totalQuestions: 10
+    totalQuestions: 5
 };
 
 // Éléments DOM
@@ -176,7 +176,7 @@ class GameController {
                 gameState.currentPlayer = playerName;
                 gameState.currentQuestion = 0;
                 gameState.score = 0;
-                gameState.totalQuestions = 10;
+                gameState.totalQuestions = 5;
                 UIManager.showScreen('game');
                 await this.loadCurrentQuestion();
             } else {
@@ -375,7 +375,7 @@ class GameController {
             gameState.currentQuestionData = null;
             gameState.currentQuestion = 0;
             gameState.score = 0;
-            gameState.totalQuestions = 10;
+            gameState.totalQuestions = 5;
             elements.playerNameInput.value = '';
             UIManager.showScreen('welcome');
         } catch (error) {
@@ -393,7 +393,7 @@ class GameController {
                     // Reset local game state
                     gameState.currentQuestion = 0;
                     gameState.score = 0;
-                    gameState.totalQuestions = 10;
+                    gameState.totalQuestions = 5;
                     UIManager.showScreen('game');
                     await this.loadCurrentQuestion();
                 } else {
