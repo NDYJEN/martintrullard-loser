@@ -3,73 +3,63 @@ const gameData = {
   questions: [
     {
       id: 1,
-      question: "Quelle est la VÉRITÉ BRUTALE sur ce DÉCHET de Martin ?",
-              options: ["Martin a un potentiel infini… pour décevoir.", "Il est agaçant comme une écharde sous la peau.", "Martin est chelou… même ChatGPT swipe à gauche.", "Martin est un expert… en déceptions"],
+      question: "Comment Martin se comporte-t-il en général ? 🤡",
+      options: [
+        "Martin est chelou même ChatGPT swipe à gauche",
+        "Martin est FANTASTIQUE dans ses rêves",
+        "Martin est BEAU quand il est TRES LOIN",
+        "Martin est POPULAIRE dans les groupes \"ne pas inviter\""
+      ],
       correctAnswer: 1,
-              hints: ["Martin est RÉPUGNANT", "Cette MERDE PUANTE mérite d'être DÉTRUITE"]
+      hints: ["Même l'IA le fuit...", "Chelou au niveau cosmique 🤖"]
     },
     {
-      id: 2, 
-              question: "Comment qualifier Martin RÉPUGNANT ?",
-      options: ["Un expert en désastres", "Il ne donne envie à personne de le revoir.", "Un maître du pathétique", "Un champion des déceptions"],
+      id: 2,
+      question: "Quelle est la vérité sur la vie sociale de Martin ? 💀",
+      options: [
+        "Martin s'est fait ghoster par un chatbot",
+        "Martin a déjà dit \"je t'aime\" à une story Insta",
+        "Martin a essayé de googler \"comment ouvrir Google\"",
+        "Martin commence ses conversations par \"T'aimes les bad boys ?\""
+      ],
       correctAnswer: 1,
-      hints: ["Une ORDURE IMMONDE", "Ce DÉCHET fait VOMIR"]
+      hints: ["Même les robots l'évitent...", "Rejeté par l'intelligence artificielle 🤖"]
     },
     {
       id: 3,
-      question: "Pourquoi ce LOOSER PATHÉTIQUE de Martin est SEUL ?",
-      options: ["Il fait fuir même ses propres reflets", "Mieux vaut l'avoir en peinture qu'en vrai.", "Il est toxique pour l'environnement", "Il fait baisser le moral des plantes"],
+      question: "Que fait Martin pour impressionner ? 🚗",
+      options: [
+        "Martin pose avec une voiture qui appartient à son cousin",
+        "Martin a reçu un \"Tu corresponds pas à mes critères\" de l'appli elle-même",
+        "Martin a demandé à une fille \"tu veux venir voir mes stories enregistrées ?\"",
+        "Martin parle à une fille, son Wi-Fi coupe par honte"
+      ],
       correctAnswer: 1,
-      hints: ["Il DÉGOÛTE tout le monde", "Ce DÉCHET RÉPUGNANT fait FUIR toutes les femmes"]
+      hints: ["Mensonge sur quatre roues...", "Pas sa caisse, pas son succès 🚗"]
     },
     {
       id: 4,
-      question: "Que pensent les gens de cette ORDURE de Martin ?",
-      options: ["Ils changent de trottoir en le voyant", "Il est imbuvable.", "Ils préfèrent parler à un mur", "Ils font semblant de ne pas le connaître"],
+      question: "Quel est le bilan amoureux de Martin ? 💔",
+      options: [
+        "Martin a un seul match sur Tinder : une erreur système",
+        "Martin a été friendzoned par sa cousine",
+        "Martin a un QI à un chiffre et il est fier",
+        "Martin pense qu'il est un cadeau, personne ne l'a commandé"
+      ],
       correctAnswer: 1,
-      hints: ["Ils le MÉPRISENT TOTALEMENT", "Cette MERDE est HAÏE par tous"]
+      hints: ["Même les algorithmes se trompent...", "Bug informatique = seule chance 💻"]
     },
     {
       id: 5,
-      question: "Quel est l'AVENIR PATHÉTIQUE de ce DÉCHET Martin ?",
-      options: ["Il finira seul avec ses regrets", "Toutes les filles le fuit comme la peste.", "Il sera oublié avant sa mort", "Il collectionne les déceptions"],
+      question: "Comment Martin voit-il sa propre personne ? 🪞",
+      options: [
+        "Martin s'aime fort. Quelqu'un devait le faire",
+        "Martin croit que les filles le fuient parce qu'elles sont timides",
+        "Le cadeau de Martin en soirée? Rentrer chez lui",
+        "Martin a un miroir, mais il mérite pas cette souffrance"
+      ],
       correctAnswer: 1,
-      hints: ["ÉCHEC et HUMILIATION TOTALE", "Ce LOOSER finira SEUL et DÉTESTÉ"]
-    },
-    {
-      id: 6,
-      question: "Comment cette ORDURE de Martin gère ses RELATIONS ?",
-      options: ["Il les sabote avant même de commencer", "Il est bon… quand il est loin.", "Il transforme l'amour en cauchemar", "Il fait fuir même les désespérées"],
-      correctAnswer: 1,
-              hints: ["Il les DÉTRUIT TOUTES", "Martin RÉPUGNANT fait FUIR tout le monde"]
-    },
-    {
-      id: 7,
-      question: "Quelle est la RÉPUTATION de ce DÉCHET Martin ?",
-      options: ["Il est célèbre pour tout ce qu'il faut éviter", "Son absence est sa plus grande qualité.", "Il est un exemple de ce qu'il ne faut pas faire", "Il inspire la pitié même aux inconnus"],
-      correctAnswer: 1,
-      hints: ["DÉSASTREUSE et RÉPUGNANTE", "Cette MERDE est la HONTE absolue"]
-    },
-    {
-      id: 8,
-      question: "Que fait cette ORDURE Martin en société ?",
-      options: ["Il éteint l'ambiance en arrivant", "Il a le charisme d'une huître morte.", "Il rend les soirées interminables", "Il fait regretter d'être venu"],
-      correctAnswer: 1,
-      hints: ["Il fait HONTE à tous", "Ce DÉCHET RÉPUGNANT est une CATASTROPHE sociale"]
-    },
-    {
-      id: 9,
-              question: "Comment qualifier l'INTELLIGENCE de Martin ?",
-      options: ["Il fait paraître un poisson rouge intelligent", "Même ChatGPT ne veut pas lui parler.", "Il a la profondeur d'une flaque", "Il pense que Wi-Fi c'est sa femme"],
-      correctAnswer: 1,
-      hints: ["INEXISTANTE et PATHÉTIQUE", "Ce CRÉTIN est plus CON qu'une HUÎTRE"]
-    },
-    {
-      id: 10,
-      question: "Quel est le DESTIN FINAL de cette MERDE Martin ?",
-      options: ["Il sera oublié avant d'être enterré", "On dirait un brouillon mal terminé.", "Il a une tête à faire planter Face ID.", "Il finira dans un livre sur les erreurs à éviter"],
-      correctAnswer: 1,
-      hints: ["DESTRUCTION COMPLÈTE", "Ce DÉCHET sera ANÉANTI et OUBLIÉ pour toujours"]
+      hints: ["Auto-amour par défaut...", "Personne d'autre ne le fait 💝"]
     }
   ]
 };
