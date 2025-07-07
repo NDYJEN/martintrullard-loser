@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 CLEAR CACHE - HOT PINK THEME 🔥</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <style>
+        body {
+            background: radial-gradient(circle at 20% 50%, transparent 20%, rgba(0,0,0,0.4) 21%, rgba(0,0,0,0.4) 34%, transparent 35%, transparent),
+                        linear-gradient(0deg, transparent 24%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.4) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.4) 75%, rgba(0,0,0,0.4) 76%, transparent 77%, transparent),
+                        radial-gradient(circle at 70% 10%, transparent 20%, rgba(0,0,0,0.3) 21%, rgba(0,0,0,0.3) 30%, transparent 31%, transparent),
+                        radial-gradient(circle at 10% 80%, transparent 15%, rgba(0,0,0,0.35) 16%, rgba(0,0,0,0.35) 25%, transparent 26%, transparent),
+                        radial-gradient(circle at 80% 80%, transparent 18%, rgba(0,0,0,0.3) 19%, rgba(0,0,0,0.3) 28%, transparent 29%, transparent),
+                        linear-gradient(135deg, #ff1493 0%, #000000 30%, #ff1493 70%, #ffc0cb 100%);
+            background-size: 100px 100px, 100px 100px, 100px 100px, 100px 100px, 100px 100px, 100% 100%;
+            background-color: #ff1493;
+            animation: leopardMove 10s ease-in-out infinite;
+            min-height: 100vh;
+            color: white;
+            font-family: 'Arial Black', sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+            overflow: hidden;
+        }
+        
+        @keyframes leopardMove {
+            0%, 100% { 
+                background-position: 0% 0%, 10% 10%, 20% 20%, 30% 30%, 40% 40%, center; 
+            }
+            25% { 
+                background-position: 25% 25%, 35% 35%, 45% 45%, 55% 55%, 65% 65%, center; 
+            }
+            50% { 
+                background-position: 50% 50%, 60% 60%, 70% 70%, 80% 80%, 90% 90%, center; 
+            }
+            75% { 
+                background-position: 75% 75%, 85% 85%, 95% 95%, 5% 5%, 15% 15%, center; 
+            }
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border: 5px solid #ff1493;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 0 30px rgba(255, 20, 147, 0.8);
+            color: #000;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 30px rgba(255, 20, 147, 0.8); }
+            50% { transform: scale(1.02); box-shadow: 0 0 50px rgba(255, 20, 147, 1); }
+        }
+        
+        h1 {
+            font-size: 3rem;
+            color: #ff1493;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #ff1493, #000000, #ffc0cb);
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 20px;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(255, 20, 147, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 20, 147, 0.8);
+        }
+        
+        .instructions {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .warning {
+            background: #ff1493;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        // Clear all possible caches
+        if ('caches' in window) {
+            caches.keys().then(function(names) {
+                names.forEach(function(name) {
+                    caches.delete(name);
+                });
+            });
+        }
+        
+        // Clear localStorage
+        localStorage.clear();
+        sessionStorage.clear();
+        
+        // Force reload function
+        function forceReload() {
+            const timestamp = Date.now();
+            window.location.href = `index.html?v=${timestamp}&clearCache=true&theme=hotpink`;
+        }
+        
+        // Auto redirect after 5 seconds
+        setTimeout(forceReload, 5000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 CACHE CLEARING 🔥</h1>
+        <h2>💀 DESTRUCTION DE MARTIN EN COURS 💀</h2>
+        
+        <div class="warning">
+            ⚠️ IMPORTANT: VOTRE NAVIGATEUR GARDE L'ANCIEN THÈME EN CACHE
+        </div>
+        
+        <div class="instructions">
+            <strong>POUR VOIR LE THÈME HOT PINK + LEOPARD PRINT :</strong><br><br>
+            
+            1️⃣ <strong>VIDEZ LE CACHE :</strong> Appuyez sur <code>Cmd+Shift+R</code> (Mac) ou <code>Ctrl+Shift+R</code> (PC)<br><br>
+            
+            2️⃣ <strong>OU UTILISEZ INCOGNITO :</strong> Ouvrez une fenêtre de navigation privée<br><br>
+            
+            3️⃣ <strong>OU CLIQUEZ CI-DESSOUS :</strong><br>
+        </div>
+        
+        <a href="javascript:forceReload()" class="btn">
+            🔥 CHARGER THÈME HOT PINK MAINTENANT 🔥
+        </a>
+        
+        <div class="instructions">
+            <strong>Redirection automatique dans 5 secondes...</strong>
+        </div>
+        
+        <div style="margin-top: 30px; font-style: italic; color: #666;">
+            🐆 Le nouveau thème a un fond HOT PINK avec motif LEOPARD PRINT animé<br>
+            💀 Contenu BRUTAL pour HUMILIER Martin sans pitié
+        </div>
+    </div>
+</body>
+</html> 
