@@ -1,4 +1,4 @@
-const { gameData, gameState } = require('./_gameData.js');
+const { gameData } = require('./_gameData.js');
 
 module.exports = function handler(req, res) {
   // Enable CORS
@@ -15,21 +15,17 @@ module.exports = function handler(req, res) {
     return res.status(405).json({ success: false, message: 'Method not allowed' });
   }
 
-  if (!gameState.gameStarted) {
+  // Get question number from query parameter (default to 0 for first question)
+  const questionNumber = parseInt(req.query.question) || 0;
+  
+  if (questionNumber < 0 || questionNumber >= gameData.questions.length) {
     return res.status(400).json({
       success: false,
-      message: "Le jeu n'a pas encore commencé"
+      message: "Numéro de question invalide"
     });
   }
   
-  if (gameState.gameFinished) {
-    return res.status(400).json({
-      success: false,
-      message: "Le jeu est terminé"
-    });
-  }
-  
-  const currentQ = gameData.questions[gameState.currentQuestion];
+  const currentQ = gameData.questions[questionNumber];
   
   res.status(200).json({
     success: true,
@@ -38,13 +34,8 @@ module.exports = function handler(req, res) {
       question: currentQ.question,
       options: currentQ.options,
       hints: currentQ.hints,
-      questionNumber: gameState.currentQuestion + 1,
-      totalQuestions: gameState.totalQuestions
-    },
-    gameState: {
-      currentQuestion: gameState.currentQuestion,
-      totalQuestions: gameState.totalQuestions,
-      score: gameState.score
+      questionNumber: questionNumber + 1,
+      totalQuestions: gameData.questions.length
     }
   });
 }; 

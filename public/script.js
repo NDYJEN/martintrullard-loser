@@ -5,7 +5,10 @@ const API_BASE_URL = window.GAME_CONFIG ? window.GAME_CONFIG.getBackendURL() : '
 let gameState = {
     currentPlayer: '',
     currentQuestionData: null,
-    hintsShown: false
+    hintsShown: false,
+    currentQuestion: 0,
+    score: 0,
+    totalQuestions: 10
 };
 
 // Éléments DOM
@@ -79,14 +82,14 @@ class GameAPI {
         });
     }
     
-    static async getCurrentQuestion() {
-        return await this.request('/current-question');
+    static async getCurrentQuestion(questionNumber = 0) {
+        return await this.request(`/current-question?question=${questionNumber}`);
     }
     
-    static async submitAnswer(answer) {
+    static async submitAnswer(answer, questionNumber, currentScore) {
         return await this.request('/submit-answer', {
             method: 'POST',
-            body: JSON.stringify({ answer })
+            body: JSON.stringify({ answer, questionNumber, currentScore })
         });
     }
     
@@ -172,6 +175,9 @@ class GameController {
             
             if (response.success) {
                 gameState.currentPlayer = playerName;
+                gameState.currentQuestion = 0;
+                gameState.score = 0;
+                gameState.totalQuestions = 10;
                 UIManager.showScreen('game');
                 await this.loadCurrentQuestion();
             } else {
@@ -188,10 +194,11 @@ class GameController {
         try {
             UIManager.showLoading(true);
             
-            const response = await GameAPI.getCurrentQuestion();
+            const response = await GameAPI.getCurrentQuestion(gameState.currentQuestion);
             
             if (response.success) {
                 gameState.currentQuestionData = response.question;
+                gameState.totalQuestions = response.question.totalQuestions;
                 this.displayQuestion(response);
             } else {
                 UIManager.showError(response.message || 'Erreur lors du chargement de la question');
@@ -204,15 +211,15 @@ class GameController {
     }
     
     static displayQuestion(response) {
-        const { question, gameState: state } = response;
+        const question = response.question;
         
-        // Mettre à jour l'interface
+        // Mettre à jour l'interface avec le game state local
         elements.currentQuestion.textContent = question.question;
-        elements.questionCounter.textContent = `Question ${question.questionNumber}/${question.totalQuestions}`;
-        elements.scoreDisplay.textContent = `Score: ${state.score}`;
+        elements.questionCounter.textContent = `Question ${gameState.currentQuestion + 1}/${gameState.totalQuestions}`;
+        elements.scoreDisplay.textContent = `Score: ${gameState.score}`;
         
         // Mettre à jour la barre de progression
-        UIManager.updateProgress(question.questionNumber - 1, question.totalQuestions);
+        UIManager.updateProgress(gameState.currentQuestion + 1, gameState.totalQuestions);
         
         // Créer les options à choix multiples
         this.createOptions(question.options);
@@ -287,9 +294,15 @@ class GameController {
             UIManager.showLoading(true);
             elements.submitAnswerBtn.disabled = true;
             
-            const response = await GameAPI.submitAnswer(answer);
+            const response = await GameAPI.submitAnswer(answer, gameState.currentQuestion, gameState.score);
             
             if (response.success) {
+                // Mettre à jour le game state local
+                gameState.score = response.currentScore || response.finalScore || gameState.score;
+                if (!response.gameFinished) {
+                    gameState.currentQuestion++;
+                }
+                
                 // Afficher le feedback
                 UIManager.showFeedback(
                     response.message,
@@ -301,8 +314,10 @@ class GameController {
                     if (response.gameFinished) {
                         this.showGameResult(response);
                     } else {
-                        // Mettre à jour le score et charger la prochaine question
-                        elements.scoreDisplay.textContent = `Score: ${response.currentScore}`;
+                        // Mettre à jour l'affichage et charger la prochaine question
+                        elements.scoreDisplay.textContent = `Score: ${gameState.score}`;
+                        elements.questionCounter.textContent = `Question ${gameState.currentQuestion + 1}/${gameState.totalQuestions}`;
+                        UIManager.updateProgress(gameState.currentQuestion + 1, gameState.totalQuestions);
                         this.loadCurrentQuestion();
                     }
                 }, 2000);
@@ -360,6 +375,9 @@ class GameController {
             await GameAPI.resetGame();
             gameState.currentPlayer = '';
             gameState.currentQuestionData = null;
+            gameState.currentQuestion = 0;
+            gameState.score = 0;
+            gameState.totalQuestions = 10;
             elements.playerNameInput.value = '';
             UIManager.showScreen('welcome');
         } catch (error) {
@@ -374,6 +392,10 @@ class GameController {
                 const response = await GameAPI.startGame(gameState.currentPlayer);
                 
                 if (response.success) {
+                    // Reset local game state
+                    gameState.currentQuestion = 0;
+                    gameState.score = 0;
+                    gameState.totalQuestions = 10;
                     UIManager.showScreen('game');
                     await this.loadCurrentQuestion();
                 } else {

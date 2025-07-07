@@ -1,4 +1,4 @@
-const { gameData, gameState } = require('./_gameData.js');
+const { gameData } = require('./_gameData.js');
 
 module.exports = function handler(req, res) {
   // Enable CORS
@@ -15,37 +15,33 @@ module.exports = function handler(req, res) {
     return res.status(405).json({ success: false, message: 'Method not allowed' });
   }
 
-  if (!gameState.gameStarted || gameState.gameFinished) {
+  const { answer, questionNumber, currentScore } = req.body;
+  
+  if (questionNumber === undefined || questionNumber < 0 || questionNumber >= gameData.questions.length) {
     return res.status(400).json({
       success: false,
-      message: "Jeu non actif"
+      message: "Numéro de question invalide"
     });
   }
-
-  const { answer } = req.body;
-  const currentQ = gameData.questions[gameState.currentQuestion];
+  
+  const currentQ = gameData.questions[questionNumber];
   
   // Dans ce jeu, le joueur gagne TOUJOURS, peu importe la réponse
   const isCorrect = true; // Le joueur GAGNE toujours
   
-  if (isCorrect) {
-    gameState.score++;
-  }
-  
-  gameState.currentQuestion++;
+  const newScore = (currentScore || 0) + (isCorrect ? 1 : 0);
+  const nextQuestion = questionNumber + 1;
   
   // Vérifier si le jeu est fini
-  if (gameState.currentQuestion >= gameState.totalQuestions) {
-    gameState.gameFinished = true;
-    
+  if (nextQuestion >= gameData.questions.length) {
     return res.status(200).json({
       success: true,
       correct: true,
       correctAnswer: currentQ.correctAnswer,
       message: "🔥 VOUS AVEZ DÉTRUIT CE DÉCHET DE MARTIN! 🔥 Martin est HUMILIÉ et ANÉANTI! Cette ORDURE PATHÉTIQUE a été DÉTRUITE BRUTALEMENT! 💀🖕",
       gameFinished: true,
-      finalScore: gameState.score,
-      totalQuestions: gameState.totalQuestions
+      finalScore: newScore,
+      totalQuestions: gameData.questions.length
     });
   }
   
@@ -56,8 +52,8 @@ module.exports = function handler(req, res) {
     correctAnswer: currentQ.correctAnswer,
     message: "EXCELLENT! Continuez à DÉTRUIRE Martin! Cette ORDURE prend cher! 🔥",
     gameFinished: false,
-    currentScore: gameState.score,
-    nextQuestion: gameState.currentQuestion + 1,
-    totalQuestions: gameState.totalQuestions
+    currentScore: newScore,
+    nextQuestion: nextQuestion + 1,
+    totalQuestions: gameData.questions.length
   });
 }; 
