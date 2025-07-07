@@ -335,17 +335,20 @@ class GameController {
         // Le joueur gagne toujours, Martin est toujours le perdant
         const isWinner = true;
         
-        // Mettre à jour l'icône
+        // Mettre à jour l'icône SANS écraser la photo de Martin
         elements.resultIcon.className = `result-icon winner`;
-        elements.resultIcon.innerHTML = '<i class="fas fa-trophy"></i>';
+        
+        // Ajouter un trophée AVANT la photo (sans écraser le contenu existant)
+        const trophyElement = document.createElement('div');
+        trophyElement.innerHTML = '<i class="fas fa-trophy" style="font-size: 2rem; color: gold; margin-bottom: 15px;"></i>';
+        elements.resultIcon.insertBefore(trophyElement, elements.resultIcon.firstChild);
         
         // Mettre à jour le titre
         elements.resultTitle.textContent = '🎉 VOUS ÊTES GAGNANT! 🎉';
         
-        // Mettre à jour le message
+        // Afficher le message et le score
+        elements.resultMessage.style.display = 'block';
         elements.resultMessage.textContent = response.message;
-        
-        // Mettre à jour le score final
         elements.finalScore.textContent = `Score final: ${response.finalScore}/${response.totalQuestions}`;
         
         // Passer à l'écran de résultats
