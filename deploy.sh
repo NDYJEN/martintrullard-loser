@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Script de Déploiement - Jeu Anti-Martin"
+echo "🚀 Script de Déploiement - Jeu Martin"
 echo "=========================================="
 
 # Vérifier si Git est installé
@@ -22,7 +22,7 @@ git add .
 
 # Créer un commit
 echo "💾 Création du commit..."
-git commit -m "Deploy: Jeu Anti-Martin avec choix multiples - $(date)"
+git commit -m "Deploy: Jeu Martin avec choix multiples - $(date)"
 
 # Demander l'URL du repository GitHub
 echo ""

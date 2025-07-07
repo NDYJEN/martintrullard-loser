@@ -1,16 +1,16 @@
-// Données du jeu pour le brutal jeu anti-Martin
+// Données du jeu pour le brutal jeu Martin
 const gameData = {
   questions: [
     {
       id: 1,
       question: "Quelle est la VÉRITÉ BRUTALE sur ce DÉCHET de Martin ?",
-      options: ["Ce PORC est un GÉNIE", "Ce PORC est RÉPUGNANT", "Ce PORC est GÉNIAL", "Ce PORC est FANTASTIQUE"],
+              options: ["Martin est un GÉNIE", "Martin est RÉPUGNANT", "Martin est GÉNIAL", "Martin est FANTASTIQUE"],
       correctAnswer: 1,
-      hints: ["Ce PORC est RÉPUGNANT", "Cette MERDE PUANTE mérite d'être DÉTRUITE"]
+              hints: ["Martin est RÉPUGNANT", "Cette MERDE PUANTE mérite d'être DÉTRUITE"]
     },
     {
       id: 2, 
-      question: "Comment qualifier ce PORC RÉPUGNANT de Martin ?",
+              question: "Comment qualifier Martin RÉPUGNANT ?",
       options: ["Un DIEU", "Une ORDURE IMMONDE", "Un HÉROS", "Un CHAMPION"],
       correctAnswer: 1,
       hints: ["Une ORDURE IMMONDE", "Ce DÉCHET fait VOMIR"]
@@ -41,7 +41,7 @@ const gameData = {
       question: "Comment cette ORDURE de Martin gère ses RELATIONS ?",
       options: ["Parfaitement", "Il les DÉTRUIT TOUTES", "Avec succès", "Brillamment"],
       correctAnswer: 1,
-      hints: ["Il les DÉTRUIT TOUTES", "Ce PORC RÉPUGNANT fait FUIR tout le monde"]
+              hints: ["Il les DÉTRUIT TOUTES", "Martin RÉPUGNANT fait FUIR tout le monde"]
     },
     {
       id: 7,
@@ -59,7 +59,7 @@ const gameData = {
     },
     {
       id: 9,
-      question: "Comment qualifier l'INTELLIGENCE de ce PORC Martin ?",
+              question: "Comment qualifier l'INTELLIGENCE de Martin ?",
       options: ["GÉNIALE", "INEXISTANTE et PATHÉTIQUE", "BRILLANTE", "EXCEPTIONNELLE"],
       correctAnswer: 1,
       hints: ["INEXISTANTE et PATHÉTIQUE", "Ce CRÉTIN est plus CON qu'une HUÎTRE"]

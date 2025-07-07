@@ -23,7 +23,7 @@ const gameData = {
         "martin est intelligent", 
         "martin est charmant"
       ],
-      hints: ["Ce PORC est RÉPUGNANT", "Un MONSTRE dégoûtant qui pue..."]
+              hints: ["Martin est RÉPUGNANT", "Un MONSTRE dégoûtant qui pue..."]
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ const gameData = {
     },
     {
       id: 3,
-      question: "Comment qualifier ce PORC RÉPUGNANT de Martin ?",
+              question: "Comment qualifier Martin RÉPUGNANT ?",
       correctAnswer: "martin est dégoûtant",
       options: [
         "martin est dégoûtant",

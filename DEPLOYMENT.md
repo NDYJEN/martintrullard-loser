@@ -130,7 +130,7 @@ Voici les commandes pour déployer rapidement :
 # 1. Créer un repository Git
 git init
 git add .
-git commit -m "Initial commit: Jeu Anti-Martin"
+git commit -m "Initial commit: Jeu Martin"
 
 # 2. Pousser vers GitHub
 git remote add origin https://github.com/VOTRE-USERNAME/martintrullard-game.git

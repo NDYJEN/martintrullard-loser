@@ -1,4 +1,4 @@
-# 🎮 Démo du Jeu Anti-Martin
+# 🎮 Démo du Jeu Martin
 
 ## 🚀 Comment lancer le jeu
 
