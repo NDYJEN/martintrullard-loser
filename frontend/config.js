@@ -8,8 +8,8 @@ const CONFIG = {
         if (this.isDevelopment) {
             return 'http://localhost:3000/api';
         } else {
-            // URL du backend en production (à remplacer par l'URL Railway/Render)
-            return 'https://martintrullard-backend.railway.app/api';
+            // Pour Vercel, les API routes sont sur le même domaine
+            return '/api';
         }
     }
 };
