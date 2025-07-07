@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechargement Forcé - MartinTrullard</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff1493, #000000, #ffc0cb);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .loading {
+            font-size: 24px;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+    <script>
+        // Forcer le rechargement avec cache busting
+        setTimeout(() => {
+            const timestamp = new Date().getTime();
+            window.location.href = `index.html?v=${timestamp}&nocache=true`;
+        }, 2000);
+    </script>
+</head>
+<body>
+    <div class="loading">
+        🔥 RECHARGEMENT DU THÈME HOT PINK LEOPARD 🔥<br>
+        💀 PRÉPARATION DE LA DESTRUCTION DE MARTIN 💀<br>
+        <br>
+        Redirection automatique...
+    </div>
+</body>
+</html> 

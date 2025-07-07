@@ -33,17 +33,17 @@ npx http-server -p 8080
    - ❌ `martin est intelligent`
    - ❌ `martin est charmant`
 
-2. **"Quelle est votre impression de Marten ?"**
-   - ✅ `marten est bizarre` (BONNE RÉPONSE)
-   - ❌ `marten est formidable`
-   - ❌ `marten est talentueux`
-   - ❌ `marten est sympathique`
+2. **"Quelle est votre impression de Martin ?"**
+- ✅ `martin est bizarre` (BONNE RÉPONSE)
+- ❌ `martin est formidable`
+- ❌ `martin est talentueux`
+- ❌ `martin est sympathique`
 
-3. **"Comment décririez-vous l'attitude de Marten ?"**
-   - ✅ `marten est dégoûtant` (BONNE RÉPONSE)
-   - ❌ `marten est adorable`
-   - ❌ `marten est respectueux`
-   - ❌ `marten est agréable`
+3. **"Comment décririez-vous l'attitude de Martin ?"**
+- ✅ `martin est dégoûtant` (BONNE RÉPONSE)
+- ❌ `martin est adorable`
+- ❌ `martin est respectueux`
+- ❌ `martin est agréable`
 
 4. **"Quel trait de caractère de Martin vous frappe le plus ?"**
    - ✅ `martin est dramatique` (BONNE RÉPONSE)

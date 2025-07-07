@@ -1,20 +1,28 @@
-/* Variables CSS */
+/* Variables CSS - Hot Pink, Pink & Black Theme with Leopard Print */
 :root {
-    --primary-color: #667eea;
-    --primary-dark: #5a6fd8;
-    --secondary-color: #764ba2;
-    --success-color: #28a745;
-    --error-color: #dc3545;
-    --warning-color: #ffc107;
-    --info-color: #17a2b8;
-    --light-bg: #f8f9fa;
-    --dark-text: #2c3e50;
-    --light-text: #6c757d;
+    --primary-color: #ff1493; /* Hot Pink */
+    --primary-dark: #e91e63; /* Darker Pink */
+    --secondary-color: #ffc0cb; /* Light Pink */
+    --black: #000000; /* Pure Black */
+    --success-color: #ff69b4; /* Hot Pink Success */
+    --error-color: #8b0000; /* Dark Red */
+    --warning-color: #ff1493; /* Hot Pink Warning */
+    --info-color: #ff69b4; /* Hot Pink Info */
+    --light-bg: #ffc0cb; /* Light Pink Background */
+    --dark-text: #000000; /* Black Text */
+    --light-text: #696969; /* Dark Gray */
     --white: #ffffff;
-    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+    --shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+    --shadow-hover: 0 8px 25px rgba(255, 20, 147, 0.5);
     --border-radius: 12px;
     --transition: all 0.3s ease;
+    
+    /* Leopard Print Pattern */
+    --leopard-pattern: radial-gradient(circle at 20% 50%, transparent 20%, rgba(0,0,0,0.3) 21%, rgba(0,0,0,0.3) 34%, transparent 35%, transparent),
+                      linear-gradient(0deg, transparent 24%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0.3) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.3) 76%, transparent 77%, transparent),
+                      radial-gradient(circle at 70% 10%, transparent 20%, rgba(0,0,0,0.2) 21%, rgba(0,0,0,0.2) 30%, transparent 31%, transparent),
+                      radial-gradient(circle at 10% 80%, transparent 15%, rgba(0,0,0,0.25) 16%, rgba(0,0,0,0.25) 25%, transparent 26%, transparent),
+                      radial-gradient(circle at 80% 80%, transparent 18%, rgba(0,0,0,0.2) 19%, rgba(0,0,0,0.2) 28%, transparent 29%, transparent);
 }
 
 /* Reset et base */
@@ -26,10 +34,19 @@
 
 body {
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: var(--leopard-pattern), 
+                radial-gradient(circle at center, var(--primary-color) 0%, var(--black) 30%, var(--primary-color) 60%, var(--secondary-color) 100%);
+    background-size: 80px 80px, 100% 100%;
+    background-color: var(--primary-color);
+    animation: leopardShift 20s ease-in-out infinite;
     min-height: 100vh;
     color: var(--dark-text);
     line-height: 1.6;
+}
+
+@keyframes leopardShift {
+    0%, 100% { background-position: 0% 0%, center; }
+    50% { background-position: 100% 100%, center; }
 }
 
 .container {
@@ -83,11 +100,27 @@ body {
 .question-card,
 .result-card {
     background: var(--white);
+    border: 3px solid var(--primary-color);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: 40px;
     margin: 20px 0;
     transition: var(--transition);
+    position: relative;
+}
+
+.welcome-card::before,
+.question-card::before,
+.result-card::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, var(--primary-color), var(--black), var(--secondary-color));
+    border-radius: var(--border-radius);
+    z-index: -1;
 }
 
 .welcome-card:hover,
@@ -157,7 +190,7 @@ body {
 .input-group input:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 0 0 3px rgba(255, 20, 147, 0.2);
 }
 
 /* Buttons */
@@ -191,13 +224,15 @@ body {
 }
 
 .btn-secondary {
-    background: #6c757d;
+    background: linear-gradient(135deg, var(--black), var(--secondary-color));
     color: var(--white);
+    border: 2px solid var(--primary-color);
 }
 
 .btn-secondary:hover {
-    background: #5a6268;
+    background: linear-gradient(135deg, var(--primary-color), var(--black));
     transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
 }
 
 .btn:disabled {
@@ -274,14 +309,16 @@ body {
 
 .option-item:hover {
     border-color: var(--primary-color);
-    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 2px 8px rgba(255, 20, 147, 0.2);
     transform: translateY(-1px);
+    background: rgba(255, 192, 203, 0.1);
 }
 
 .option-item.selected {
     border-color: var(--primary-color);
-    background: rgba(102, 126, 234, 0.05);
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    background: linear-gradient(135deg, rgba(255, 20, 147, 0.15), rgba(255, 192, 203, 0.15));
+    box-shadow: 0 0 0 3px rgba(255, 20, 147, 0.3);
+    border-width: 3px;
 }
 
 .option-radio {

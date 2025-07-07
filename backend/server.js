@@ -15,39 +15,39 @@ const gameData = {
   questions: [
     {
       id: 1,
-      question: "Comment qualifieriez-vous Martin de manière honnête ?",
+      question: "Quelle est la VÉRITÉ BRUTALE sur ce DÉCHET de Martin ?",
       correctAnswer: "martin est chelou",
       options: [
         "martin est chelou",
         "martin est génial",
-        "martin est intelligent",
+        "martin est intelligent", 
         "martin est charmant"
       ],
-      hints: ["Soyez franc dans votre évaluation", "Quelque chose d'étrange..."]
+      hints: ["Ce PORC est RÉPUGNANT", "Un MONSTRE dégoûtant qui pue..."]
     },
     {
       id: 2,
-      question: "Quelle est votre impression de Marten ?",
-      correctAnswer: "marten est bizarre",
+      question: "Que pensez-vous VRAIMENT de cette ORDURE de Martin ?",
+      correctAnswer: "martin est bizarre",
       options: [
-        "marten est bizarre",
-        "marten est formidable",
-        "marten est talentueux",
-        "marten est sympathique"
+        "martin est bizarre",
+        "martin est formidable",
+        "martin est talentueux",
+        "martin est sympathique"
       ],
-      hints: ["Une impression peu conventionnelle", "Pas tout à fait normal..."]
+      hints: ["Une ABOMINATION répugnante", "Ce DÉCHET n'est PAS normal..."]
     },
     {
       id: 3,
-      question: "Comment décririez-vous l'attitude de Marten ?",
-      correctAnswer: "marten est dégoûtant",
+      question: "Comment qualifier ce PORC RÉPUGNANT de Martin ?",
+      correctAnswer: "martin est dégoûtant",
       options: [
-        "marten est dégoûtant",
-        "marten est adorable",
-        "marten est respectueux",
-        "marten est agréable"
+        "martin est dégoûtant",
+        "martin est adorable",
+        "martin est respectueux",
+        "martin est agréable"
       ],
-      hints: ["Une attitude repoussante", "Pas très agréable..."]
+      hints: ["Cette MERDE PUANTE mérite d'être DÉTRUITE", "Un MONSTRE qui fait VOMIR..."]
     },
     {
       id: 4,
@@ -75,7 +75,7 @@ const gameData = {
     },
     {
       id: 6,
-      question: "Quelle est la vraie nature de Martin au travail ?",
+      question: "Quel RATÉ PATHÉTIQUE est Martin au travail ?",
       correctAnswer: "martin est incompétent",
       options: [
         "martin est incompétent",
@@ -83,7 +83,7 @@ const gameData = {
         "martin est professionnel",
         "martin est efficace"
       ],
-      hints: ["Pas très doué professionnellement", "Manque de compétences..."]
+      hints: ["Ce DÉCHET est BON À RIEN", "Une MERDE INUTILE qui mérite d'être VIRÉE..."]
     },
     {
       id: 7,
@@ -123,7 +123,7 @@ const gameData = {
     },
     {
       id: 10,
-      question: "Quel est le problème de Martin avec les relations ?",
+      question: "Pourquoi ce LOOSER PATHÉTIQUE de Martin est SEUL ?",
       correctAnswer: "aucune fille veut de martin",
       options: [
         "aucune fille veut de martin",
@@ -131,7 +131,7 @@ const gameData = {
         "martin est très romantique",
         "martin est irrésistible"
       ],
-      hints: ["Problème de séduction", "Zéro succès romantique..."]
+      hints: ["Ce DÉCHET RÉPUGNANT fait FUIR toutes les femmes", "Un MONSTRE qui ne baisera JAMAIS..."]
     }
   ]
 };
@@ -162,7 +162,7 @@ app.post('/api/start-game', (req, res) => {
   
   res.json({
     success: true,
-    message: `Bienvenue ${gameState.playerName}! Le jeu commence.`,
+    message: `PRÉPAREZ-VOUS ${gameState.playerName}! DÉTRUISEZ cette MERDE de Martin SANS PITIÉ!`,
     gameState: {
       currentQuestion: gameState.currentQuestion,
       totalQuestions: gameState.totalQuestions,
@@ -242,7 +242,7 @@ app.post('/api/submit-answer', (req, res) => {
       totalQuestions: gameState.totalQuestions,
       winner: winner,
       isPlayerWinner: true,
-      message: `🎉 Vous êtes GAGNANT! Martin est PERDANT! 🎉 Score: ${gameState.score}/${gameState.totalQuestions}. Martin reste un loser comme toujours! 😂`
+      message: `🔥 VOUS AVEZ DÉTRUIT CE DÉCHET DE MARTIN! 🔥 Score: ${gameState.score}/${gameState.totalQuestions}. Cette ORDURE PATHÉTIQUE a été ANÉANTIE! Martin est un RATÉ TOTAL qui mérite d'être HUMILIÉ BRUTALEMENT! 💀🖕`
     });
   }
   

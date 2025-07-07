@@ -4,29 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MartinTrullard.com - Jeu Anti-Martin</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20250707-hotpink-leopard&nocache=true">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- FORCE HOT PINK THEME - Override any cached styles -->
+    <style>
+        body {
+            background: radial-gradient(circle at 20% 50%, transparent 20%, rgba(0,0,0,0.3) 21%, rgba(0,0,0,0.3) 34%, transparent 35%, transparent),
+                        linear-gradient(0deg, transparent 24%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0.3) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.3) 76%, transparent 77%, transparent),
+                        radial-gradient(circle at 70% 10%, transparent 20%, rgba(0,0,0,0.2) 21%, rgba(0,0,0,0.2) 30%, transparent 31%, transparent),
+                        radial-gradient(circle at 10% 80%, transparent 15%, rgba(0,0,0,0.25) 16%, rgba(0,0,0,0.25) 25%, transparent 26%, transparent),
+                        radial-gradient(circle at 80% 80%, transparent 18%, rgba(0,0,0,0.2) 19%, rgba(0,0,0,0.2) 28%, transparent 29%, transparent),
+                        linear-gradient(135deg, #ff1493 0%, #000000 50%, #ffc0cb 100%) !important;
+            background-size: 80px 80px, 80px 80px, 80px 80px, 80px 80px, 80px 80px, 100% 100% !important;
+            background-color: #ff1493 !important;
+            animation: leopardShift 15s ease-in-out infinite !important;
+        }
+        
+        @keyframes leopardShift {
+            0%, 100% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, center; }
+            50% { background-position: 100% 100%, 50% 50%, 25% 75%, 75% 25%, 30% 80%, center; }
+        }
+        
+        .welcome-card, .question-card, .result-card {
+            border: 3px solid #ff1493 !important;
+            background: white !important;
+            box-shadow: 0 8px 25px rgba(255, 20, 147, 0.5) !important;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #ff1493, #000000) !important;
+            color: white !important;
+            border: 2px solid #ffc0cb !important;
+        }
+        
+        .header h1 i {
+            color: #ffd700 !important;
+        }
+        
+        .option-item:hover {
+            background: rgba(255, 192, 203, 0.2) !important;
+            border-color: #ff1493 !important;
+        }
+        
+        .option-item.selected {
+            background: linear-gradient(135deg, rgba(255, 20, 147, 0.2), rgba(255, 192, 203, 0.2)) !important;
+            border: 3px solid #ff1493 !important;
+            box-shadow: 0 0 15px rgba(255, 20, 147, 0.5) !important;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <!-- Header -->
         <header class="header">
-            <h1><i class="fas fa-gamepad"></i> MartinTrullard.com</h1>
-            <p class="subtitle">Jeu Anti-Martin - Vous gagnez TOUJOURS contre ce loser!</p>
+            <h1><i class="fas fa-skull-crossbones"></i> MartinTrullard.com</h1>
+            <p class="subtitle">HUMILIATION TOTALE DE MARTIN - Écrasez ce PATHÉTIQUE LOSER!</p>
         </header>
 
         <!-- Welcome Screen -->
         <div id="welcome-screen" class="screen active">
             <div class="welcome-card">
                 <div class="welcome-icon">
-                    <i class="fas fa-trophy"></i>
+                    <i class="fas fa-fire"></i>
                 </div>
-                <h2>Bienvenue au Jeu Anti-Martin!</h2>
+                <h2>DESTRUCTION BRUTALE DE MARTIN!</h2>
                 <p class="welcome-text">
-                    Dites toute la vérité sur Martin et humiliez-le! 
-                    Peu importe votre score, VOUS GAGNEZ TOUJOURS et Martin est toujours le PERDANT! 
-                    C'est un cadeau spécial pour notre cher ami Martin qui adore être humilié! 😈
+                    DÉTRUISEZ cet INCOMPÉTENT de Martin sans pitié! 
+                    Dites toute la VÉRITÉ CRUELLE sur ce PATHÉTIQUE LOSER!
+                    VOUS ÉCRASEZ TOUJOURS ce DÉCHET - Martin est un RATÉ TOTAL qui mérite d'être ANÉANTI!
+                    Ce PORC aime être HUMILIÉ BRUTALEMENT! 🔥💀
                 </p>
                 <div class="input-group">
                     <input type="text" id="player-name" placeholder="Entrez votre nom" maxlength="20">
@@ -115,10 +163,10 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 MartinTrullard.com - Tous droits réservés</p>
+        <p>&copy; 2024 MartinTrullard.com - DESTRUCTION DE MARTIN EN COURS</p>
         <p class="backend-status">
-            <i class="fas fa-server"></i> 
-            <span id="backend-status">Vérification du backend...</span>
+            <i class="fas fa-skull"></i> 
+            <span id="backend-status">Serveur de HUMILIATION actif...</span>
         </p>
     </footer>
 
