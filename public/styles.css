@@ -1,19 +1,19 @@
-/* Variables CSS - HOT PINK & BLACK LEOPARD THEME */
+/* Variables CSS - HOT PINK, PURPLE & BLACK THEME */
 :root {
-    --primary-color: #8b0040; /* Dark Hot Pink */
-    --primary-dark: #66002e; /* Darker Pink */
+    --primary-color: #ff1493; /* Hot Pink */
+    --primary-dark: #8b008b; /* Dark Purple */
     --secondary-color: #000000; /* Pure Black */
     --black: #000000; /* Pure Black */
-    --success-color: #8b0040; /* Dark Pink Success */
+    --success-color: #ff1493; /* Hot Pink Success */
     --error-color: #8b0000; /* Dark Red */
-    --warning-color: #8b0040; /* Dark Pink Warning */
-    --info-color: #8b0040; /* Dark Pink Info */
-    --light-bg: #1a1a1a; /* Dark Background */
+    --warning-color: #ff1493; /* Hot Pink Warning */
+    --info-color: #8b008b; /* Purple Info */
+    --light-bg: #2a2a2a; /* Dark Gray Background */
     --dark-text: #ffffff; /* White Text */
     --light-text: #ffc0cb; /* Light Pink */
-    --accent-color: #c1477c; /* Medium Pink Accent */
-    --shadow: 0 4px 15px rgba(139, 0, 64, 0.3);
-    --shadow-hover: 0 8px 25px rgba(139, 0, 64, 0.5);
+    --accent-color: #8b008b; /* Dark Purple Accent */
+    --shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+    --shadow-hover: 0 8px 25px rgba(139, 0, 139, 0.5);
     --border-radius: 12px;
     --transition: all 0.3s ease;
     
@@ -33,7 +33,7 @@
 }
 
 body {
-    font-family: 'Playfair Display', 'Cinzel', serif;
+    font-family: 'Cinzel', 'Arial', sans-serif;
     background: 
         /* SPARKLES LAYER - Multiple layers for maximum glitter */
         radial-gradient(circle at 10% 20%, rgba(255,255,255,0.9) 1px, transparent 2px),
@@ -49,28 +49,20 @@ body {
         radial-gradient(circle at 5% 90%, rgba(255,255,255,0.9) 1px, transparent 2px),
         radial-gradient(circle at 25% 10%, rgba(255,255,255,0.7) 1px, transparent 2px),
         
-        /* REALISTIC LEOPARD SPOTS - Irregular rosette patterns */
-        radial-gradient(ellipse 20px 15px at 18% 25%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.3) 45%, transparent 50%),
-        radial-gradient(ellipse 16px 12px at 20% 27%, rgba(0,0,0,0.7) 30%, transparent 35%),
-        radial-gradient(ellipse 24px 18px at 65% 15%, rgba(0,0,0,0.9) 35%, rgba(0,0,0,0.4) 40%, transparent 45%),
-        radial-gradient(ellipse 18px 14px at 67% 17%, rgba(0,0,0,0.6) 25%, transparent 30%),
-        radial-gradient(ellipse 22px 16px at 35% 55%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.3) 45%, transparent 50%),
-        radial-gradient(ellipse 19px 14px at 37% 57%, rgba(0,0,0,0.7) 30%, transparent 35%),
-        radial-gradient(ellipse 25px 19px at 8% 75%, rgba(0,0,0,0.9) 35%, rgba(0,0,0,0.4) 40%, transparent 45%),
-        radial-gradient(ellipse 17px 13px at 10% 77%, rgba(0,0,0,0.6) 25%, transparent 30%),
-        radial-gradient(ellipse 21px 15px at 75% 65%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.3) 45%, transparent 50%),
-        radial-gradient(ellipse 16px 11px at 77% 67%, rgba(0,0,0,0.7) 30%, transparent 35%),
-        radial-gradient(ellipse 23px 17px at 45% 10%, rgba(0,0,0,0.9) 35%, rgba(0,0,0,0.4) 40%, transparent 45%),
-        radial-gradient(ellipse 15px 12px at 47% 12%, rgba(0,0,0,0.6) 25%, transparent 30%),
-        radial-gradient(ellipse 20px 14px at 80% 40%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.3) 45%, transparent 50%),
-        radial-gradient(ellipse 18px 13px at 82% 42%, rgba(0,0,0,0.7) 30%, transparent 35%),
-        radial-gradient(ellipse 26px 20px at 25% 80%, rgba(0,0,0,0.9) 35%, rgba(0,0,0,0.4) 40%, transparent 45%),
-        radial-gradient(ellipse 19px 15px at 27% 82%, rgba(0,0,0,0.6) 25%, transparent 30%),
-        radial-gradient(ellipse 22px 16px at 55% 70%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.3) 45%, transparent 50%),
-        radial-gradient(ellipse 17px 12px at 57% 72%, rgba(0,0,0,0.7) 30%, transparent 35%),
+        /* REALISTIC LEOPARD ROSETTES - True leopard pattern */
+        radial-gradient(ellipse 28px 20px at 18% 25%, rgba(0,0,0,0.9) 25%, rgba(0,0,0,0.2) 35%, transparent 45%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 55%, transparent 65%),
+        radial-gradient(ellipse 32px 24px at 65% 15%, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.1) 30%, transparent 40%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.3) 50%, transparent 60%),
+        radial-gradient(ellipse 26px 18px at 35% 55%, rgba(0,0,0,0.9) 25%, rgba(0,0,0,0.2) 35%, transparent 45%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 55%, transparent 65%),
+        radial-gradient(ellipse 30px 22px at 8% 75%, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.1) 30%, transparent 40%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.3) 50%, transparent 60%),
+        radial-gradient(ellipse 24px 16px at 75% 65%, rgba(0,0,0,0.9) 25%, rgba(0,0,0,0.2) 35%, transparent 45%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 55%, transparent 65%),
+        radial-gradient(ellipse 28px 20px at 45% 10%, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.1) 30%, transparent 40%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.3) 50%, transparent 60%),
+        radial-gradient(ellipse 25px 17px at 80% 40%, rgba(0,0,0,0.9) 25%, rgba(0,0,0,0.2) 35%, transparent 45%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 55%, transparent 65%),
+        radial-gradient(ellipse 31px 23px at 25% 80%, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.1) 30%, transparent 40%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.3) 50%, transparent 60%),
+        radial-gradient(ellipse 27px 19px at 55% 70%, rgba(0,0,0,0.9) 25%, rgba(0,0,0,0.2) 35%, transparent 45%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 55%, transparent 65%),
+        radial-gradient(ellipse 29px 21px at 90% 20%, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.1) 30%, transparent 40%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.3) 50%, transparent 60%),
         
-        /* DARK PINK BLACK BASE GRADIENT */
-        linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 25%, var(--primary-color) 50%, #000000 75%, var(--accent-color) 100%);
+        /* HOT PINK PURPLE BLACK BASE GRADIENT */
+        linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 20%, var(--secondary-color) 40%, var(--primary-color) 60%, var(--accent-color) 80%, var(--secondary-color) 100%);
     background-size: 120px 120px, 110px 110px, 130px 130px, 100px 100px, 140px 140px, 90px 90px, 150px 150px, 80px 80px, 160px 160px, 70px 70px, 170px 170px, 85px 85px, 
                      110px 110px, 110px 110px, 120px 120px, 120px 120px, 100px 100px, 115px 115px, 115px 115px, 125px 125px, 130px 130px, 135px 135px, 140px 140px, 145px 145px, 
                      105px 105px, 125px 125px, 135px 135px, 145px 145px, 155px 155px, 165px 165px, 100% 100%;
@@ -124,7 +116,7 @@ body {
     margin-bottom: 10px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     font-family: 'Cinzel', serif;
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .header h1 i {
@@ -136,7 +128,7 @@ body {
     font-size: 1.4rem;
     font-weight: 400;
     opacity: 0.9;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cinzel', serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     color: var(--dark-text);
 }
@@ -219,7 +211,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-family: 'Cinzel', serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
@@ -230,7 +222,8 @@ body {
     color: var(--dark-text);
     margin-bottom: 30px;
     line-height: 1.8;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
 }
 
@@ -384,7 +377,7 @@ body {
 
 .option-item:hover {
     border-color: var(--accent-color);
-    box-shadow: 0 2px 8px rgba(139, 0, 64, 0.4);
+    box-shadow: 0 2px 8px rgba(255, 20, 147, 0.4);
     transform: translateY(-1px);
     background: var(--secondary-color);
 }
@@ -392,7 +385,7 @@ body {
 .option-item.selected {
     border-color: var(--accent-color);
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    box-shadow: 0 0 0 3px rgba(139, 0, 64, 0.5);
+    box-shadow: 0 0 0 3px rgba(139, 0, 139, 0.5);
     border-width: 3px;
     color: var(--dark-text);
 }
@@ -409,7 +402,7 @@ body {
     color: var(--dark-text);
     font-weight: 500;
     flex: 1;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Arial', sans-serif;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
@@ -572,7 +565,7 @@ body {
 .spinner {
     width: 50px;
     height: 50px;
-    border: 4px solid rgba(139, 0, 64, 0.3);
+    border: 4px solid rgba(255, 20, 147, 0.3);
     border-top: 4px solid var(--accent-color);
     border-radius: 50%;
     animation: spin 1s linear infinite;
