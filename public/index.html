@@ -111,6 +111,14 @@
             justify-content: center;
             animation: rotateLoser 3s ease-in-out infinite;
             margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .martin-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         .martin-placeholder i {
@@ -225,14 +233,13 @@
                 <div id="result-icon" class="result-icon">
                     <div class="martin-photo-container">
                         <div class="martin-placeholder">
-                            <i class="fas fa-user-slash"></i>
-                            <div class="photo-text">PHOTO DE MARTIN</div>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzMzMzMzMztzdG9wLW9wYWNpdHk6MSIgLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMUExQTFBO3N0b3Atb3BhY2l0eToxIiAvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiByeD0iNzUiIGZpbGw9InVybCgjYmcpIi8+Cjx0ZXh0IHg9Ijc1IiB5PSI2MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSIjZmYxNDkzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iYm9sZCI+TUFSVElOPC90ZXh0Pgo8dGV4dCB4PSI3NSIgeT0iODAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TE9TRVIhPC90ZXh0Pgo8dGV4dCB4PSI3NSIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZjE0OTMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPvCfkZA8L3RleHQ+Cjwvc3ZnPgo=" alt="Martin LOSER" class="martin-photo">
                         </div>
                         <div class="martin-label">PERDANT (Martin)</div>
                     </div>
                 </div>
                 <h2 id="result-title">🎉 VOUS ÊTES GAGNANT! 🎉</h2>
-                <div id="result-message" class="result-message">VOUS CONNAISSEZ PARFAITEMENT CE DÉCHET DE MARTIN! 💀 Martin est HUMILIÉ et ANÉANTI! Cette ORDURE PATHÉTIQUE a été EXPOSÉE BRUTALEMENT! 💀🔥</div>
+                <div id="result-message" class="result-message" style="display: none;"></div>
                 <div id="final-score" class="final-score"></div>
                 
                 <div class="result-actions">
