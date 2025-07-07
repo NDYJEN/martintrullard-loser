@@ -27,7 +27,6 @@ const elements = {
     questionCounter: document.getElementById('question-counter'),
     scoreDisplay: document.getElementById('score-display'),
     progressFill: document.getElementById('progress-fill'),
-    currentQuestion: document.getElementById('current-question'),
     optionsContainer: document.getElementById('options-container'),
     submitAnswerBtn: document.getElementById('submit-answer-btn'),
     showHintsBtn: document.getElementById('show-hints-btn'),
@@ -214,7 +213,6 @@ class GameController {
         const question = response.question;
         
         // Mettre à jour l'interface avec le game state local
-        elements.currentQuestion.textContent = question.question;
         elements.questionCounter.textContent = `Question ${gameState.currentQuestion + 1}/${gameState.totalQuestions}`;
         elements.scoreDisplay.textContent = `Score: ${gameState.score}`;
         
