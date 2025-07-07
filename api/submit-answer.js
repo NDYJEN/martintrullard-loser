@@ -38,7 +38,7 @@ module.exports = function handler(req, res) {
       success: true,
       correct: true,
       correctAnswer: currentQ.correctAnswer,
-      message: "🔥 VOUS AVEZ DÉTRUIT CE DÉCHET DE MARTIN! 🔥 Martin est HUMILIÉ et ANÉANTI! Cette ORDURE PATHÉTIQUE a été DÉTRUITE BRUTALEMENT! 💀🖕",
+      message: "🔥 VOUS CONNAISSEZ PARFAITEMENT CE DÉCHET DE MARTIN! 🔥 Martin est HUMILIÉ et ANÉANTI! Cette ORDURE PATHÉTIQUE a été EXPOSÉE BRUTALEMENT! 💀🖕",
       gameFinished: true,
       finalScore: newScore,
       totalQuestions: gameData.questions.length
@@ -50,7 +50,7 @@ module.exports = function handler(req, res) {
     success: true,
     correct: true,
     correctAnswer: currentQ.correctAnswer,
-    message: "EXCELLENT! Continuez à DÉTRUIRE Martin! 🔥",
+    message: "EXCELLENT! Continuez à CONNAÎTRE Martin! 🔥",
     gameFinished: false,
     currentScore: newScore,
     nextQuestion: nextQuestion + 1,

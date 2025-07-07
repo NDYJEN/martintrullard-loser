@@ -27,7 +27,7 @@ module.exports = function handler(req, res) {
   
   res.status(200).json({
     success: true,
-    message: `PRÉPAREZ-VOUS ${gameState.playerName}! DÉTRUISEZ cette MERDE de Martin SANS PITIÉ!`,
+    message: `PRÉPAREZ-VOUS ${gameState.playerName}! CONNAISSEZ cette MERDE de Martin SANS PITIÉ!`,
     gameState: {
       currentQuestion: gameState.currentQuestion,
       totalQuestions: gameState.totalQuestions,

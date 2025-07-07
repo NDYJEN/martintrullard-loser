@@ -12,7 +12,7 @@ module.exports = function handler(req, res) {
 
   res.status(200).json({
     success: true,
-    message: "API fonctionne! Prêt à DÉTRUIRE Martin!",
+    message: "API fonctionne! Prêt à CONNAÎTRE Martin!",
     timestamp: new Date().toISOString(),
     status: "BRUTAL MODE ACTIVÉ! 🔥💀"
   });
