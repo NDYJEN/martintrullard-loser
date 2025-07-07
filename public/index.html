@@ -98,15 +98,32 @@
             margin: 20px 0;
         }
 
-        .martin-photo {
+        .martin-placeholder {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             border: 5px solid #ff1493;
             box-shadow: 0 0 30px rgba(255, 20, 147, 1), 0 0 60px rgba(255, 20, 147, 0.5);
-            object-fit: cover;
+            background: linear-gradient(135deg, #333333, #1a1a1a);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             animation: rotateLoser 3s ease-in-out infinite;
-            background: #ffffff;
+            margin: 0 auto;
+        }
+
+        .martin-placeholder i {
+            font-size: 3rem;
+            color: #ff1493;
+            margin-bottom: 5px;
+        }
+
+        .photo-text {
+            font-size: 0.7rem;
+            color: #ffffff;
+            text-align: center;
+            font-weight: bold;
         }
 
         .martin-label {
@@ -207,7 +224,10 @@
             <div class="result-card">
                 <div id="result-icon" class="result-icon">
                     <div class="martin-photo-container">
-                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAjACoDASIAAhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAABwACAwQFBgj/xAAtEAACAQMDAgUCBgMAAAAAAAABAgMABBEFEiExQQYHE1FhcYEiQlKRobHB8P/EABgBAAMBAQAAAAAAAAAAAAAAAAIDBAEF/8QAHhEAAgICAwEBAAAAAAAAAAAAAAECEQMSITETQVH/2gAMAwEAAhEDEQA/APTWqeJ9I0WVYNTvy1w4yjRIG29dxLE89KXT/HGhaly0E8Lr2ZTnFfPfiHwvpniDVRr2lXIgaVlM4kzskHcD0IoLw7Hd+E9UZo5TcWdztO45O5PoR/W2ulGnZZvTWjRGjCf8QaGbm2ZZvTjhZdoFDa6+MXiKY7bOzgC/7dxJH4q7EanNqAaC4WGe2YEOkj7WU/P9VTM2z3Ii7/vWCb1F3JNI2/qZJNvxQj8V6zpGkXUV5dyRQzI3DyCM8nofmvQCWOziFef1jSH1C7a3dPx/wGOQa3QzmNHxD4jjnBitWUHjLH2oseBfEp1fTYrOVhLdxjbuQ5bFQWXgvQ7JhJDZ/jAwZJGJP6VFHYW1hZrDpsUaW6YwhH+Kns49B//Z" alt="Martin" class="martin-photo">
+                        <div class="martin-placeholder">
+                            <i class="fas fa-user-slash"></i>
+                            <div class="photo-text">PHOTO DE MARTIN</div>
+                        </div>
                         <div class="martin-label">PERDANT (Martin)</div>
                     </div>
                 </div>
