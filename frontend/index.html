@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MartinTrullard.com - Jeu Anti-Martin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-gamepad"></i> MartinTrullard.com</h1>
+            <p class="subtitle">Jeu Anti-Martin - Vous gagnez TOUJOURS contre ce loser!</p>
+        </header>
+
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <div class="welcome-card">
+                <div class="welcome-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h2>Bienvenue au Jeu Anti-Martin!</h2>
+                <p class="welcome-text">
+                    Dites toute la vérité sur Martin et humiliez-le! 
+                    Peu importe votre score, VOUS GAGNEZ TOUJOURS et Martin est toujours le PERDANT! 
+                    C'est un cadeau spécial pour notre cher ami Martin qui adore être humilié! 😈
+                </p>
+                <div class="input-group">
+                    <input type="text" id="player-name" placeholder="Entrez votre nom" maxlength="20">
+                    <button id="start-game-btn" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Commencer le Jeu
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen">
+            <div class="game-header">
+                <div class="progress-container">
+                    <div class="progress-info">
+                        <span id="question-counter">Question 1/10</span>
+                        <span id="score-display">Score: 0</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <h3 id="current-question">Chargement de la question...</h3>
+                </div>
+                
+                <div class="answer-section">
+                    <div id="options-container" class="options-container">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                    <button id="submit-answer-btn" class="btn btn-primary" disabled>
+                        <i class="fas fa-check"></i> Répondre
+                    </button>
+                </div>
+
+                <div class="hints-section">
+                    <button id="show-hints-btn" class="btn btn-secondary">
+                        <i class="fas fa-lightbulb"></i> Voir les indices
+                    </button>
+                    <div id="hints-container" class="hints-container"></div>
+                </div>
+
+                <div id="feedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <div class="result-card">
+                <div id="result-icon" class="result-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h2 id="result-title">Résultat</h2>
+                <div id="result-message" class="result-message"></div>
+                <div id="final-score" class="final-score"></div>
+                
+                <div class="result-actions">
+                    <button id="play-again-btn" class="btn btn-primary">
+                        <i class="fas fa-redo"></i> Rejouer
+                    </button>
+                    <button id="new-player-btn" class="btn btn-secondary">
+                        <i class="fas fa-user"></i> Nouveau Joueur
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Chargement...</p>
+        </div>
+
+        <!-- Error Modal -->
+        <div id="error-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3><i class="fas fa-exclamation-triangle"></i> Erreur</h3>
+                <p id="error-message">Une erreur s'est produite.</p>
+                <button id="error-ok-btn" class="btn btn-primary">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 MartinTrullard.com - Tous droits réservés</p>
+        <p class="backend-status">
+            <i class="fas fa-server"></i> 
+            <span id="backend-status">Vérification du backend...</span>
+        </p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

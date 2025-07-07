@@ -1,0 +1,17 @@
+[build]
+  publish = "frontend"
+  command = "echo 'Frontend ready for deployment'"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  framework = "#static"
+  targetPort = 8080
+  port = 8888
+  publish = "frontend" 

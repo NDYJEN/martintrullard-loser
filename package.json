@@ -1,0 +1,30 @@
+{
+  "name": "martintrullard-loser-game",
+  "version": "1.0.0",
+  "description": "Jeu Anti-Martin - Site web où Martin perd toujours",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "echo 'Frontend ready'",
+    "build": "npm run install-backend && npm run install-frontend",
+    "dev-backend": "cd backend && npm run dev",
+    "dev-frontend": "cd frontend && python3 -m http.server 8080",
+    "deploy": "./deploy.sh"
+  },
+  "keywords": [
+    "game",
+    "martin",
+    "humiliation",
+    "web",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Team Anti-Martin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/martintrullard-game.git"
+  },
+  "homepage": "https://martintrullard-loser.com.fr"
+} 
