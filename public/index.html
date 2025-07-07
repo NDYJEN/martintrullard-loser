@@ -92,6 +92,51 @@
             box-shadow: 0 0 20px rgba(139, 0, 139, 0.8) !important;
             color: #ffffff !important;
         }
+
+        .martin-photo-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .martin-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #ff1493;
+            box-shadow: 0 0 20px rgba(255, 20, 147, 0.8);
+            object-fit: cover;
+            animation: rotateLoser 3s ease-in-out infinite;
+        }
+
+        .martin-label {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff1493;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        @keyframes rotateLoser {
+            0%, 100% { 
+                transform: rotate(0deg) scale(1);
+                filter: brightness(1);
+            }
+            25% { 
+                transform: rotate(-5deg) scale(1.05);
+                filter: brightness(1.2);
+            }
+            50% { 
+                transform: rotate(0deg) scale(1.1);
+                filter: brightness(1.3);
+            }
+            75% { 
+                transform: rotate(5deg) scale(1.05);
+                filter: brightness(1.2);
+            }
+        }
     </style>
 </head>
 <body>
@@ -160,10 +205,13 @@
         <div id="result-screen" class="screen">
             <div class="result-card">
                 <div id="result-icon" class="result-icon">
-                    <i class="fas fa-trophy"></i>
+                    <div class="martin-photo-container">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAjACoDASIAAhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAABwACAwQFBgj/xAAtEAACAQMDAgUCBgMAAAAAAAABAgMABBEFEiExQQYHE1FhcYEiQlKRobHB8P/EABgBAAMBAQAAAAAAAAAAAAAAAAIDBAEF/8QAHhEAAgICAwEBAAAAAAAAAAAAAAECEQMSITETQVH/2gAMAwEAAhEDEQA/APTWqeJ9I0WVYNTvy1w4yjRIG29dxLE89KXT/HGhaly0E8Lr2ZTnFfPfiHwvpniDVRr2lXIgaVlM4kzskHcD0IoLw7Hd+E9UZo5TcWdztO45O5PoR/W2ulGnZZvTWjRGjCf8QaGbm2ZZvTjhZdoFDa6+MXiKY7bOzgC/7dxJH4q7EanNqAaC4WGe2YEOkj7WU/P9VTM2z3Ii7/vWCb1F3JNI2/qZJNvxQj8V6zpGkXUV5dyRQzI3DyCM8nofmvQCWOziFef1jSH1C7a3dPx/wGOQa3QzmNHxD4jjnBitWUHjLH2oseBfEp1fTYrOVhLdxjbuQ5bFQWXgvQ7JhJDZ/jAwZJGJP6VFHYW1hZrDpsUaW6YwhH+Kns49B//Z" alt="Martin" class="martin-photo">
+                        <div class="martin-label">PERDANT (Martin)</div>
+                    </div>
                 </div>
-                <h2 id="result-title">Résultat</h2>
-                <div id="result-message" class="result-message"></div>
+                <h2 id="result-title">🎉 VOUS ÊTES GAGNANT! 🎉</h2>
+                <div id="result-message" class="result-message">VOUS CONNAISSEZ PARFAITEMENT CE DÉCHET DE MARTIN! 💀 Martin est HUMILIÉ et ANÉANTI! Cette ORDURE PATHÉTIQUE a été EXPOSÉE BRUTALEMENT! 💀🔥</div>
                 <div id="final-score" class="final-score"></div>
                 
                 <div class="result-actions">
