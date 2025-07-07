@@ -1,19 +1,19 @@
-/* Variables CSS - Dark Bright Colors Theme */
+/* Variables CSS - Professional Dark Purple & Pink Theme */
 :root {
-    --primary-color: #c41e3a; /* Dark Red */
-    --primary-dark: #8b0000; /* Darker Red */
-    --secondary-color: #4b0082; /* Dark Purple */
+    --primary-color: #6b2c91; /* Deep Purple */
+    --primary-dark: #4a1c63; /* Darker Purple */
+    --secondary-color: #2a2a3a; /* Dark Blue-Gray */
     --black: #1a1a1a; /* Dark Gray */
-    --success-color: #2f4f2f; /* Dark Green */
-    --error-color: #8b0000; /* Dark Red */
-    --warning-color: #ff6347; /* Dark Orange */
-    --info-color: #4682b4; /* Steel Blue */
-    --light-bg: #2e2e2e; /* Dark Background */
-    --dark-text: #f5f5dc; /* Beige Text */
-    --light-text: #d3d3d3; /* Light Gray */
-    --accent-color: #daa520; /* Dark Gold */
-    --shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
-    --shadow-hover: 0 8px 25px rgba(255, 20, 147, 0.5);
+    --success-color: #5a4d6b; /* Muted Purple */
+    --error-color: #8b4a6b; /* Dark Pink-Red */
+    --warning-color: #9b6b8a; /* Dusty Rose */
+    --info-color: #6b7a8a; /* Steel Gray */
+    --light-bg: #2e2e3e; /* Dark Blue-Gray Background */
+    --dark-text: #e8e8f0; /* Light Gray Text */
+    --light-text: #b8b8c8; /* Medium Gray */
+    --accent-color: #8a6b9b; /* Muted Purple-Pink */
+    --shadow: 0 4px 15px rgba(107, 44, 145, 0.3);
+    --shadow-hover: 0 8px 25px rgba(107, 44, 145, 0.5);
     --border-radius: 12px;
     --transition: all 0.3s ease;
     
@@ -35,48 +35,40 @@
 body {
     font-family: 'Playfair Display', 'Cinzel', serif;
     background: 
-        /* Sparkles layer */
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8) 1px, transparent 2px),
-        radial-gradient(circle at 80% 30%, rgba(255,255,255,0.9) 1px, transparent 2px),
-        radial-gradient(circle at 40% 60%, rgba(255,255,255,0.7) 1px, transparent 2px),
-        radial-gradient(circle at 90% 70%, rgba(255,255,255,0.8) 1px, transparent 2px),
-        radial-gradient(circle at 10% 80%, rgba(255,255,255,0.9) 1px, transparent 2px),
-        radial-gradient(circle at 60% 10%, rgba(255,255,255,0.6) 1px, transparent 2px),
-        radial-gradient(circle at 30% 90%, rgba(255,255,255,0.8) 1px, transparent 2px),
-        radial-gradient(circle at 70% 40%, rgba(255,255,255,0.7) 1px, transparent 2px),
-        /* Leopard print spots */
-        radial-gradient(circle at 20% 50%, transparent 20%, rgba(0,0,0,0.4) 21%, rgba(0,0,0,0.4) 34%, transparent 35%, transparent),
-        radial-gradient(circle at 70% 20%, transparent 15%, rgba(0,0,0,0.3) 16%, rgba(0,0,0,0.3) 28%, transparent 29%, transparent),
-        radial-gradient(circle at 10% 80%, transparent 18%, rgba(0,0,0,0.35) 19%, rgba(0,0,0,0.35) 30%, transparent 31%, transparent),
-        radial-gradient(circle at 80% 80%, transparent 12%, rgba(0,0,0,0.4) 13%, rgba(0,0,0,0.4) 25%, transparent 26%, transparent),
-        radial-gradient(circle at 50% 10%, transparent 16%, rgba(0,0,0,0.3) 17%, rgba(0,0,0,0.3) 27%, transparent 28%, transparent),
-        radial-gradient(circle at 30% 70%, transparent 14%, rgba(0,0,0,0.35) 15%, rgba(0,0,0,0.35) 24%, transparent 25%, transparent),
-        radial-gradient(circle at 90% 40%, transparent 17%, rgba(0,0,0,0.4) 18%, rgba(0,0,0,0.4) 29%, transparent 30%, transparent),
-        linear-gradient(135deg, #ff1493 0%, #000000 30%, #ff1493 60%, #ffc0cb 100%);
-    background-size: 100px 100px, 120px 120px, 90px 90px, 110px 110px, 80px 80px, 130px 130px, 70px 70px, 100px 100px, 80px 80px, 95px 95px, 110px 110px, 75px 75px, 120px 120px, 85px 85px, 105px 105px, 100% 100%;
-    background-color: #ff1493;
-    animation: leopardShimmer 25s ease-in-out infinite;
+        /* Realistic leopard spots - varied sizes and irregular shapes */
+        radial-gradient(ellipse 12px 8px at 25% 25%, #1a1a1a, transparent),
+        radial-gradient(ellipse 8px 6px at 27% 27%, #1a1a1a, transparent),
+        radial-gradient(ellipse 10px 7px at 75% 75%, #1a1a1a, transparent),
+        radial-gradient(ellipse 6px 4px at 77% 73%, #1a1a1a, transparent),
+        radial-gradient(ellipse 9px 6px at 45% 15%, #1a1a1a, transparent),
+        radial-gradient(ellipse 11px 9px at 15% 75%, #1a1a1a, transparent),
+        radial-gradient(ellipse 7px 5px at 17% 77%, #1a1a1a, transparent),
+        radial-gradient(ellipse 8px 6px at 85% 25%, #1a1a1a, transparent),
+        radial-gradient(ellipse 10px 8px at 35% 85%, #1a1a1a, transparent),
+        radial-gradient(ellipse 6px 4px at 37% 83%, #1a1a1a, transparent),
+        radial-gradient(ellipse 9px 7px at 65% 45%, #1a1a1a, transparent),
+        radial-gradient(ellipse 12px 10px at 55% 65%, #1a1a1a, transparent),
+        radial-gradient(ellipse 7px 5px at 85% 65%, #1a1a1a, transparent),
+        radial-gradient(ellipse 8px 6px at 15% 35%, #1a1a1a, transparent),
+        radial-gradient(ellipse 10px 8px at 75% 15%, #1a1a1a, transparent),
+        /* Base gradient with professional dark purple-pink tones */
+        linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    background-size: 80px 80px, 80px 80px, 90px 90px, 90px 90px, 75px 75px, 85px 85px, 85px 85px, 95px 95px, 70px 70px, 70px 70px, 100px 100px, 110px 110px, 65px 65px, 75px 75px, 90px 90px, 100% 100%;
+    background-color: var(--primary-color);
+    animation: subtleLeopardShift 30s ease-in-out infinite;
     min-height: 100vh;
     color: var(--dark-text);
     line-height: 1.6;
 }
 
-@keyframes leopardShimmer {
+@keyframes subtleLeopardShift {
     0%, 100% { 
-        background-position: 0% 0%, 10% 10%, 20% 20%, 30% 30%, 40% 40%, 50% 50%, 60% 60%, 70% 70%, 0% 0%, 15% 25%, 35% 5%, 55% 45%, 75% 15%, 95% 35%, 5% 65%, center; 
-        filter: brightness(1) saturate(1.2);
-    }
-    25% { 
-        background-position: 25% 25%, 35% 15%, 45% 35%, 55% 25%, 65% 45%, 75% 35%, 85% 45%, 95% 25%, 20% 30%, 40% 10%, 60% 50%, 80% 20%, 100% 40%, 10% 70%, 30% 90%, center; 
-        filter: brightness(1.1) saturate(1.3);
+        background-position: 0% 0%, 5% 5%, 10% 10%, 15% 15%, 20% 20%, 25% 25%, 30% 30%, 35% 35%, 40% 40%, 45% 45%, 50% 50%, 55% 55%, 60% 60%, 65% 65%, 70% 70%, center; 
+        filter: brightness(1) saturate(1);
     }
     50% { 
-        background-position: 50% 50%, 60% 40%, 70% 60%, 80% 50%, 90% 70%, 100% 60%, 110% 70%, 120% 50%, 45% 55%, 65% 35%, 85% 75%, 105% 45%, 125% 65%, 35% 95%, 55% 115%, center; 
-        filter: brightness(1.2) saturate(1.4);
-    }
-    75% { 
-        background-position: 75% 25%, 85% 35%, 95% 25%, 105% 35%, 115% 25%, 125% 35%, 135% 25%, 145% 35%, 70% 80%, 90% 60%, 110% 100%, 130% 70%, 150% 90%, 60% 120%, 80% 140%, center; 
-        filter: brightness(1.1) saturate(1.3);
+        background-position: 20% 20%, 25% 25%, 30% 30%, 35% 35%, 40% 40%, 45% 45%, 50% 50%, 55% 55%, 60% 60%, 65% 65%, 70% 70%, 75% 75%, 80% 80%, 85% 85%, 90% 90%, center; 
+        filter: brightness(1.05) saturate(1.1);
     }
 }
 
@@ -360,7 +352,7 @@ body {
 
 .option-item:hover {
     border-color: var(--accent-color);
-    box-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+    box-shadow: 0 2px 8px rgba(138, 107, 155, 0.3);
     transform: translateY(-1px);
     background: var(--secondary-color);
 }
@@ -368,7 +360,7 @@ body {
 .option-item.selected {
     border-color: var(--accent-color);
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    box-shadow: 0 0 0 3px rgba(218, 165, 32, 0.4);
+    box-shadow: 0 0 0 3px rgba(138, 107, 155, 0.4);
     border-width: 3px;
     color: var(--dark-text);
 }
@@ -548,7 +540,7 @@ body {
 .spinner {
     width: 50px;
     height: 50px;
-    border: 4px solid rgba(218, 165, 32, 0.3);
+    border: 4px solid rgba(138, 107, 155, 0.3);
     border-top: 4px solid var(--accent-color);
     border-radius: 50%;
     animation: spin 1s linear infinite;

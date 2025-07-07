@@ -8,80 +8,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <!-- FORCE HOT PINK THEME - Override any cached styles -->
+    <!-- Professional Dark Theme Override -->
     <style>
         body {
             background: 
-                /* Sparkles layer */
-                radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8) 1px, transparent 2px),
-                radial-gradient(circle at 80% 30%, rgba(255,255,255,0.9) 1px, transparent 2px),
-                radial-gradient(circle at 40% 60%, rgba(255,255,255,0.7) 1px, transparent 2px),
-                radial-gradient(circle at 90% 70%, rgba(255,255,255,0.8) 1px, transparent 2px),
-                radial-gradient(circle at 10% 80%, rgba(255,255,255,0.9) 1px, transparent 2px),
-                radial-gradient(circle at 60% 10%, rgba(255,255,255,0.6) 1px, transparent 2px),
-                radial-gradient(circle at 30% 90%, rgba(255,255,255,0.8) 1px, transparent 2px),
-                radial-gradient(circle at 70% 40%, rgba(255,255,255,0.7) 1px, transparent 2px),
-                /* Leopard print spots */
-                radial-gradient(circle at 20% 50%, transparent 20%, rgba(0,0,0,0.4) 21%, rgba(0,0,0,0.4) 34%, transparent 35%, transparent),
-                radial-gradient(circle at 70% 20%, transparent 15%, rgba(0,0,0,0.3) 16%, rgba(0,0,0,0.3) 28%, transparent 29%, transparent),
-                radial-gradient(circle at 10% 80%, transparent 18%, rgba(0,0,0,0.35) 19%, rgba(0,0,0,0.35) 30%, transparent 31%, transparent),
-                radial-gradient(circle at 80% 80%, transparent 12%, rgba(0,0,0,0.4) 13%, rgba(0,0,0,0.4) 25%, transparent 26%, transparent),
-                radial-gradient(circle at 50% 10%, transparent 16%, rgba(0,0,0,0.3) 17%, rgba(0,0,0,0.3) 27%, transparent 28%, transparent),
-                radial-gradient(circle at 30% 70%, transparent 14%, rgba(0,0,0,0.35) 15%, rgba(0,0,0,0.35) 24%, transparent 25%, transparent),
-                radial-gradient(circle at 90% 40%, transparent 17%, rgba(0,0,0,0.4) 18%, rgba(0,0,0,0.4) 29%, transparent 30%, transparent),
-                linear-gradient(135deg, #ff1493 0%, #000000 30%, #ff1493 60%, #ffc0cb 100%) !important;
-            background-size: 100px 100px, 120px 120px, 90px 90px, 110px 110px, 80px 80px, 130px 130px, 70px 70px, 100px 100px, 80px 80px, 95px 95px, 110px 110px, 75px 75px, 120px 120px, 85px 85px, 105px 105px, 100% 100% !important;
-            background-color: #ff1493 !important;
-            animation: leopardShimmer 25s ease-in-out infinite !important;
+                /* Realistic leopard spots - varied sizes and irregular shapes */
+                radial-gradient(ellipse 12px 8px at 25% 25%, #1a1a1a, transparent),
+                radial-gradient(ellipse 8px 6px at 27% 27%, #1a1a1a, transparent),
+                radial-gradient(ellipse 10px 7px at 75% 75%, #1a1a1a, transparent),
+                radial-gradient(ellipse 6px 4px at 77% 73%, #1a1a1a, transparent),
+                radial-gradient(ellipse 9px 6px at 45% 15%, #1a1a1a, transparent),
+                radial-gradient(ellipse 11px 9px at 15% 75%, #1a1a1a, transparent),
+                radial-gradient(ellipse 7px 5px at 17% 77%, #1a1a1a, transparent),
+                radial-gradient(ellipse 8px 6px at 85% 25%, #1a1a1a, transparent),
+                radial-gradient(ellipse 10px 8px at 35% 85%, #1a1a1a, transparent),
+                radial-gradient(ellipse 6px 4px at 37% 83%, #1a1a1a, transparent),
+                radial-gradient(ellipse 9px 7px at 65% 45%, #1a1a1a, transparent),
+                radial-gradient(ellipse 12px 10px at 55% 65%, #1a1a1a, transparent),
+                radial-gradient(ellipse 7px 5px at 85% 65%, #1a1a1a, transparent),
+                radial-gradient(ellipse 8px 6px at 15% 35%, #1a1a1a, transparent),
+                radial-gradient(ellipse 10px 8px at 75% 15%, #1a1a1a, transparent),
+                /* Base gradient with professional dark purple-pink tones */
+                linear-gradient(135deg, #6b2c91, #2a2a3a, #8a6b9b) !important;
+            background-size: 80px 80px, 80px 80px, 90px 90px, 90px 90px, 75px 75px, 85px 85px, 85px 85px, 95px 95px, 70px 70px, 70px 70px, 100px 100px, 110px 110px, 65px 65px, 75px 75px, 90px 90px, 100% 100% !important;
+            background-color: #6b2c91 !important;
+            animation: subtleLeopardShift 30s ease-in-out infinite !important;
         }
         
-        @keyframes leopardShimmer {
+        @keyframes subtleLeopardShift {
             0%, 100% { 
-                background-position: 0% 0%, 10% 10%, 20% 20%, 30% 30%, 40% 40%, 50% 50%, 60% 60%, 70% 70%, 0% 0%, 15% 25%, 35% 5%, 55% 45%, 75% 15%, 95% 35%, 5% 65%, center; 
-                filter: brightness(1) saturate(1.2);
-            }
-            25% { 
-                background-position: 25% 25%, 35% 15%, 45% 35%, 55% 25%, 65% 45%, 75% 35%, 85% 45%, 95% 25%, 20% 30%, 40% 10%, 60% 50%, 80% 20%, 100% 40%, 10% 70%, 30% 90%, center; 
-                filter: brightness(1.1) saturate(1.3);
+                background-position: 0% 0%, 5% 5%, 10% 10%, 15% 15%, 20% 20%, 25% 25%, 30% 30%, 35% 35%, 40% 40%, 45% 45%, 50% 50%, 55% 55%, 60% 60%, 65% 65%, 70% 70%, center; 
+                filter: brightness(1) saturate(1);
             }
             50% { 
-                background-position: 50% 50%, 60% 40%, 70% 60%, 80% 50%, 90% 70%, 100% 60%, 110% 70%, 120% 50%, 45% 55%, 65% 35%, 85% 75%, 105% 45%, 125% 65%, 35% 95%, 55% 115%, center; 
-                filter: brightness(1.2) saturate(1.4);
-            }
-            75% { 
-                background-position: 75% 25%, 85% 35%, 95% 25%, 105% 35%, 115% 25%, 125% 35%, 135% 25%, 145% 35%, 70% 80%, 90% 60%, 110% 100%, 130% 70%, 150% 90%, 60% 120%, 80% 140%, center; 
-                filter: brightness(1.1) saturate(1.3);
+                background-position: 20% 20%, 25% 25%, 30% 30%, 35% 35%, 40% 40%, 45% 45%, 50% 50%, 55% 55%, 60% 60%, 65% 65%, 70% 70%, 75% 75%, 80% 80%, 85% 85%, 90% 90%, center; 
+                filter: brightness(1.05) saturate(1.1);
             }
         }
         
         .welcome-card, .question-card, .result-card {
-            border: 3px solid #ff1493 !important;
-            background: #8A2BE2 !important;
-            box-shadow: 0 8px 25px rgba(255, 20, 147, 0.5) !important;
-            color: #ffffff !important;
+            border: 3px solid #6b2c91 !important;
+            background: #2a2a3a !important;
+            box-shadow: 0 8px 25px rgba(107, 44, 145, 0.5) !important;
+            color: #e8e8f0 !important;
         }
         
         .btn-primary {
-            background: linear-gradient(135deg, #ff1493, #000000) !important;
-            color: white !important;
-            border: 2px solid #ffc0cb !important;
+            background: linear-gradient(135deg, #6b2c91, #4a1c63) !important;
+            color: #e8e8f0 !important;
+            border: 2px solid #8a6b9b !important;
         }
         
         .header h1 i {
-            color: #ffd700 !important;
+            color: #8a6b9b !important;
         }
         
         .option-item:hover {
-            background: rgba(138, 43, 226, 0.9) !important;
-            border-color: #ff1493 !important;
-            color: #ffffff !important;
+            background: #2a2a3a !important;
+            border-color: #8a6b9b !important;
+            color: #e8e8f0 !important;
         }
         
         .option-item.selected {
-            background: linear-gradient(135deg, rgba(255, 20, 147, 0.4), rgba(138, 43, 226, 0.8)) !important;
-            border: 3px solid #ff1493 !important;
-            box-shadow: 0 0 15px rgba(255, 20, 147, 0.5) !important;
-            color: #ffffff !important;
+            background: linear-gradient(135deg, #6b2c91, #2a2a3a) !important;
+            border: 3px solid #8a6b9b !important;
+            box-shadow: 0 0 15px rgba(138, 107, 155, 0.4) !important;
+            color: #e8e8f0 !important;
         }
     </style>
 </head>
@@ -101,10 +93,7 @@
                 </div>
                 <h2>CONNAISSANCE BRUTALE DE MARTIN!</h2>
                 <p class="welcome-text">
-                    CONNAISSEZ cet INCOMPÉTENT de Martin sans pitié! 
-                    Dites toute la VÉRITÉ CRUELLE sur ce PATHÉTIQUE LOSER!
-                    VOUS ÉCRASEZ TOUJOURS ce DÉCHET - Martin est un RATÉ TOTAL qui mérite d'être ANÉANTI!
-                    Martin aime être HUMILIÉ BRUTALEMENT! 🔥💀
+                    CONNAISSEZ Martin LOSER! 🔥💀
                 </p>
                 <div class="input-group">
                     <input type="text" id="player-name" placeholder="Entrez votre nom" maxlength="20">
