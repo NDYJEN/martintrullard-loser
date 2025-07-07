@@ -1,4 +1,4 @@
-/* Variables CSS - DARK LEOPARD THEME */
+/* Variables CSS - DARK JAGUAR THEME */
 :root {
     --primary-color: #ff1493; /* Hot Pink */
     --primary-dark: #ff1493; /* Hot Pink */
@@ -17,8 +17,8 @@
     --border-radius: 12px;
     --transition: all 0.3s ease;
     
-    /* Leopard Print Pattern */
-    --leopard-pattern: radial-gradient(circle at 20% 50%, transparent 20%, rgba(0,0,0,0.3) 21%, rgba(0,0,0,0.3) 34%, transparent 35%, transparent),
+    /* Jaguar Print Pattern */
+    --jaguar-pattern: radial-gradient(circle at 20% 50%, transparent 20%, rgba(0,0,0,0.3) 21%, rgba(0,0,0,0.3) 34%, transparent 35%, transparent),
                       linear-gradient(0deg, transparent 24%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0.3) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.3) 76%, transparent 77%, transparent),
                       radial-gradient(circle at 70% 10%, transparent 20%, rgba(0,0,0,0.2) 21%, rgba(0,0,0,0.2) 30%, transparent 31%, transparent),
                       radial-gradient(circle at 10% 80%, transparent 15%, rgba(0,0,0,0.25) 16%, rgba(0,0,0,0.25) 25%, transparent 26%, transparent),
@@ -35,7 +35,7 @@
 body {
     font-family: 'Cinzel', 'Arial', sans-serif;
     background: 
-        /* GLITTERY SPARKLES ON LEOPARD */
+        /* GLITTERY SPARKLES ON JAGUAR */
         radial-gradient(circle at 10% 20%, rgba(255,255,255,0.9) 1px, transparent 2px),
         radial-gradient(circle at 30% 15%, rgba(255,255,255,0.8) 1px, transparent 2px),
         radial-gradient(circle at 50% 25%, rgba(255,255,255,0.9) 1px, transparent 2px),
@@ -47,17 +47,17 @@ body {
         radial-gradient(circle at 75% 85%, rgba(255,255,255,0.9) 1px, transparent 2px),
         radial-gradient(circle at 90% 10%, rgba(255,255,255,0.8) 1px, transparent 2px),
         
-        /* HOT PINK LEOPARD SPOTS */
-        radial-gradient(ellipse 25px 18px at 15% 20%, rgba(255, 20, 147, 0.5) 25%, rgba(0,0,0,0.8) 35%, transparent 45%),
-        radial-gradient(ellipse 28px 20px at 65% 15%, rgba(255, 20, 147, 0.4) 20%, rgba(0,0,0,0.9) 30%, transparent 40%),
-        radial-gradient(ellipse 22px 16px at 30% 55%, rgba(255, 20, 147, 0.6) 25%, rgba(0,0,0,0.7) 35%, transparent 45%),
-        radial-gradient(ellipse 26px 19px at 85% 35%, rgba(255, 20, 147, 0.4) 20%, rgba(0,0,0,0.8) 30%, transparent 40%),
-        radial-gradient(ellipse 24px 17px at 10% 75%, rgba(255, 20, 147, 0.5) 25%, rgba(0,0,0,0.9) 35%, transparent 45%),
-        radial-gradient(ellipse 29px 21px at 55% 85%, rgba(255, 20, 147, 0.3) 20%, rgba(0,0,0,0.8) 30%, transparent 40%),
-        radial-gradient(ellipse 20px 14px at 75% 10%, rgba(255, 20, 147, 0.6) 25%, rgba(0,0,0,0.7) 35%, transparent 45%),
-        radial-gradient(ellipse 27px 19px at 40% 25%, rgba(255, 20, 147, 0.4) 20%, rgba(0,0,0,0.9) 30%, transparent 40%),
-        radial-gradient(ellipse 23px 16px at 80% 60%, rgba(255, 20, 147, 0.5) 25%, rgba(0,0,0,0.8) 35%, transparent 45%),
-        radial-gradient(ellipse 25px 18px at 25% 80%, rgba(255, 20, 147, 0.4) 20%, rgba(0,0,0,0.7) 30%, transparent 40%),
+        /* HOT PINK JAGUAR ROSETTES */
+        radial-gradient(circle 30px at 20% 25%, transparent 40%, rgba(255, 20, 147, 0.8) 45%, rgba(255, 20, 147, 0.9) 55%, transparent 60%),
+        radial-gradient(circle 28px at 70% 20%, transparent 35%, rgba(255, 20, 147, 0.7) 40%, rgba(255, 20, 147, 0.8) 50%, transparent 55%),
+        radial-gradient(circle 32px at 35% 60%, transparent 45%, rgba(255, 20, 147, 0.9) 50%, rgba(255, 20, 147, 1.0) 60%, transparent 65%),
+        radial-gradient(circle 26px at 80% 40%, transparent 40%, rgba(255, 20, 147, 0.6) 45%, rgba(255, 20, 147, 0.7) 55%, transparent 60%),
+        radial-gradient(circle 29px at 15% 80%, transparent 35%, rgba(255, 20, 147, 0.8) 40%, rgba(255, 20, 147, 0.9) 50%, transparent 55%),
+        radial-gradient(circle 31px at 60% 85%, transparent 40%, rgba(255, 20, 147, 0.7) 45%, rgba(255, 20, 147, 0.8) 55%, transparent 60%),
+        radial-gradient(circle 25px at 85% 15%, transparent 45%, rgba(255, 20, 147, 0.9) 50%, rgba(255, 20, 147, 1.0) 60%, transparent 65%),
+        radial-gradient(circle 27px at 45% 30%, transparent 35%, rgba(255, 20, 147, 0.6) 40%, rgba(255, 20, 147, 0.7) 50%, transparent 55%),
+        radial-gradient(circle 33px at 75% 70%, transparent 40%, rgba(255, 20, 147, 0.8) 45%, rgba(255, 20, 147, 0.9) 55%, transparent 60%),
+        radial-gradient(circle 24px at 25% 50%, transparent 45%, rgba(255, 20, 147, 0.7) 50%, rgba(255, 20, 147, 0.8) 60%, transparent 65%),
         
         /* PURE BLACK BASE */
         linear-gradient(0deg, #000000 0%, #000000 100%);
@@ -66,13 +66,13 @@ body {
         60px 60px, 65px 65px, 70px 70px, 75px 75px, 80px 80px,
         100% 100%, 100% 100%, 100% 100%;
     background-color: #000000;
-    animation: leopardGlitterGlow 8s ease-in-out infinite;
+    animation: jaguarGlitterGlow 8s ease-in-out infinite;
     min-height: 100vh;
     color: var(--dark-text);
     line-height: 1.6;
 }
 
-@keyframes leopardGlitterGlow {
+@keyframes jaguarGlitterGlow {
     0%, 100% { 
         background-position: 0% 0%, 10% 10%, 20% 20%, 30% 30%, 40% 40%,
                             50% 50%, 60% 60%, 70% 70%, 80% 80%, 90% 90%,
