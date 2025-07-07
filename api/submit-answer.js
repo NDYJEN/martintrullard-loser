@@ -50,7 +50,7 @@ module.exports = function handler(req, res) {
     success: true,
     correct: true,
     correctAnswer: currentQ.correctAnswer,
-    message: "EXCELLENT! Continuez à DÉTRUIRE Martin! Cette ORDURE prend cher! 🔥",
+    message: "EXCELLENT! Continuez à DÉTRUIRE Martin! 🔥",
     gameFinished: false,
     currentScore: newScore,
     nextQuestion: nextQuestion + 1,
