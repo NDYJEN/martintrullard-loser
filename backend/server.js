@@ -15,12 +15,12 @@ const gameData = {
   questions: [
     {
       id: 1,
-      question: "Comment Laurie se comporte-t-elle en général ? 🤡",
+      question: "Comment Laurie se comporte-t-il en général ? 🤡",
       correctAnswer: "Laurie est chelou même ChatGPT swipe à gauche",
       options: [
         "Laurie est chelou même ChatGPT swipe à gauche",
         "Laurie est FANTASTIQUE dans ses rêves",
-        "Laurie est BELLE quand elle est TRES LOIN",
+        "Laurie est BEAU quand il est TRES LOIN",
         "Laurie est POPULAIRE dans les groupes \"ne pas inviter\""
       ],
       hints: ["Même l'IA la fuit...", "Chelou au niveau cosmique 🤖"]
@@ -55,15 +55,15 @@ const gameData = {
       correctAnswer: "Laurie a un seul match sur Tinder : une erreur système",
       options: [
         "Laurie a un seul match sur Tinder : une erreur système",
-        "Laurie a été friendzonée par sa cousine",
-        "Laurie a un QI à un chiffre et elle est fière",
-        "Laurie pense qu'elle est un cadeau, personne ne l'a commandée"
+        "Laurie a été friendzoné par sa cousine",
+        "Laurie a un QI à un chiffre et il est fier",
+        "Laurie pense qu'il est un cadeau, personne ne l'a commandé"
       ],
       hints: ["Même les algorithmes se trompent...", "Bug informatique = seule chance 💻"]
     },
     {
       id: 5,
-      question: "Comment Laurie voit-elle sa propre personne ? 🪞",
+      question: "Comment Laurie voit-il sa propre personne ? 🪞",
       correctAnswer: "Laurie s'aime fort. Quelqu'un devait le faire",
       options: [
         "Laurie croit que les filles la fuient parce qu'elles sont timides",

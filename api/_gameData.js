@@ -3,11 +3,11 @@ const gameData = {
   questions: [
     {
       id: 1,
-      question: "Comment Laurie se comporte-t-elle en général ? 🤡",
+      question: "Comment Laurie se comporte-t-il en général ? 🤡",
       options: [
         "Laurie est chelou même ChatGPT swipe à gauche",
         "Laurie est FANTASTIQUE dans ses rêves",
-        "Laurie est BELLE quand elle est TRES LOIN",
+        "Laurie est BEAU quand il est TRES LOIN",
         "Laurie est POPULAIRE dans les groupes \"ne pas inviter\""
       ],
       correctAnswer: 1,
@@ -42,21 +42,21 @@ const gameData = {
       question: "Quel est le bilan amoureux de Laurie ? 💔",
       options: [
         "Laurie a un seul match sur Tinder : une erreur système",
-        "Laurie a été friendzonée par sa cousine",
-        "Laurie a un QI à un chiffre et elle est fière",
-        "Laurie pense qu'elle est un cadeau, personne ne l'a commandée"
+              "Laurie a été friendzoné par sa cousine",
+      "Laurie a un QI à un chiffre et il est fier",
+        "Laurie pense qu'il est un cadeau, personne ne l'a commandé"
       ],
       correctAnswer: 1,
       hints: ["Même les algorithmes se trompent...", "Bug informatique = seule chance 💻"]
     },
     {
       id: 5,
-      question: "Comment Laurie voit-elle sa propre personne ? 🪞",
+      question: "Comment Laurie voit-il sa propre personne ? 🪞",
       options: [
         "Laurie s'aime fort. Quelqu'un devait le faire",
-        "Laurie croit que les filles la fuient parce qu'elles sont timides",
-        "Le cadeau de Laurie en soirée? Rentrer chez elle",
-        "Laurie a un miroir, mais elle mérite pas cette souffrance"
+              "Laurie croit que les filles le fuient parce qu'elles sont timides",
+      "Le cadeau de Laurie en soirée? Rentrer chez lui",
+      "Laurie a un miroir, mais il mérite pas cette souffrance"
       ],
       correctAnswer: 1,
       hints: ["Auto-amour par défaut...", "Personne d'autre ne le fait 💝"]
