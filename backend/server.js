@@ -66,9 +66,9 @@ const gameData = {
       question: "Comment Laurie voit-il sa propre personne ? 🪞",
       correctAnswer: "Laurie s'aime fort. Quelqu'un devait le faire",
       options: [
-        "Laurie croit que les filles la fuient parce qu'elles sont timides",
-        "Le cadeau de Laurie en soirée? Rentrer chez elle",
-        "Laurie a un miroir, mais elle mérite pas cette souffrance",
+                  "Laurie croit que les filles le fuient parce qu'elles sont timides",
+          "Le cadeau de Laurie en soirée? Rentrer chez lui",
+          "Laurie a un miroir, mais il mérite pas cette souffrance",
         "Laurie s'aime fort. Quelqu'un devait le faire"
       ],
       hints: ["Auto-amour par défaut...", "Personne d'autre ne le fait 💝"]
