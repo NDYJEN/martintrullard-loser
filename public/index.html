@@ -78,7 +78,10 @@
                 <div id="result-icon" class="result-icon">
                     <div class="laurie-photo-container">
                         <div class="laurie-placeholder">
-                            <i class="fas fa-user-times" style="font-size: 4rem; color: var(--primary-color);"></i>
+                            <img src="laurie.jpg" alt="Laurie" class="laurie-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="laurie-fallback" style="display: none;">
+                                <i class="fas fa-user-times" style="font-size: 4rem; color: var(--primary-color);"></i>
+                            </div>
                         </div>
                         <div class="laurie-label">PERDANT (Laurie)</div>
                     </div>
