@@ -1,5 +1,5 @@
 #!/bin/bash
-# Debug Commands for MartinTrullard Game
+# Debug Commands for LaurieWlsh Game
 
 echo "🔍 DEBUGGING MARTINTRULLARD GAME"
 echo "================================"

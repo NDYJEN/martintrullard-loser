@@ -1,13 +1,13 @@
-# 🎮 MartinTrullard.com - Jeu de Questions
+# 🎮 LaurieWlsh.com - Jeu de Questions
 
-Site web de jeu interactif où les joueurs tentent de battre Martin en répondant correctement à des questions. 
+Site web de jeu interactif où les joueurs tentent de battre Laurie en répondant correctement à des questions. 
 
 ## 📋 Aperçu du Projet
 
 Ce site web est composé de :
 - **Backend** : API REST en Node.js/Express qui gère la logique de jeu
 - **Frontend** : Interface utilisateur moderne avec HTML/CSS/JavaScript vanilla
-- **Système de scoring** : Le joueur doit obtenir au moins 50% de bonnes réponses pour battre Martin
+- **Système de scoring** : Le joueur doit obtenir au moins 50% de bonnes réponses pour battre Laurie
 
 ## 🚀 Démarrage Rapide
 
@@ -53,8 +53,8 @@ Le frontend sera disponible sur `http://localhost:8080` (ou selon votre méthode
 1. **Démarrage** : Entrez votre nom sur l'écran d'accueil
 2. **Questions** : Répondez aux 5 questions présentées
 3. **Indices** : Cliquez sur "Voir les indices" si vous avez besoin d'aide
-4. **Score** : Obtenez au moins 3/5 bonnes réponses pour battre Martin
-5. **Résultat** : Découvrez si vous avez gagné ou si Martin a remporté le défi
+4. **Score** : Obtenez au moins 3/5 bonnes réponses pour battre Laurie
+5. **Résultat** : Découvrez si vous avez gagné ou si Laurie a remporté le défi
 
 ## 🛠️ Architecture Technique
 
@@ -105,7 +105,7 @@ TP5/
 - **Gestion d'erreurs** robuste
 
 ### Questions Incluses
-1. Nom de famille de Martin
+1. Nom de famille de Laurie
 2. Opération mathématique simple
 3. Couleur du ciel
 4. Langage de programmation du backend
@@ -179,4 +179,4 @@ MIT License - voir le fichier de licence pour plus de détails.
 
 ## 🎉 Amusez-vous bien !
 
-Pouvez-vous battre Martin ? Relevez le défi sur martintrullard.com ! 🏆 
+Pouvez-vous battre Laurie ? Relevez le défi sur lauriewlsh.com ! 🏆 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "martintrullard-game",
+  "name": "lauriewlsh-game",
   "functions": {
     "api/**/*.js": {
       "maxDuration": 30

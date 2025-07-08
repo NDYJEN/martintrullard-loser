@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Script de Déploiement - Jeu Martin"
+echo "🚀 Script de Déploiement - Jeu Laurie"
 echo "=========================================="
 
 # Vérifier si Git est installé
@@ -22,12 +22,12 @@ git add .
 
 # Créer un commit
 echo "💾 Création du commit..."
-git commit -m "Deploy: Jeu Martin avec choix multiples - $(date)"
+git commit -m "Deploy: Jeu Laurie avec choix multiples - $(date)"
 
 # Demander l'URL du repository GitHub
 echo ""
 echo "🔗 Configuration du repository GitHub"
-echo "Entrez l'URL de votre repository GitHub (exemple: https://github.com/username/martintrullard-game.git):"
+echo "Entrez l'URL de votre repository GitHub (exemple: https://github.com/username/lauriewlsh-game.git):"
 read -r REPO_URL
 
 if [ -z "$REPO_URL" ]; then
@@ -54,8 +54,8 @@ echo ""
 echo "📋 Prochaines étapes:"
 echo "1. 🏗️  Déployez le BACKEND sur Railway.app ou Render.com"
 echo "2. 🌐 Déployez le FRONTEND sur Netlify.com ou Vercel.com"
-echo "3. 🌍 Configurez le domaine martintrullard-loser.com.fr"
+echo "3. 🌍 Configurez le domaine lauriewlsh-loser.com.fr"
 echo ""
 echo "📖 Consultez DEPLOYMENT.md pour les instructions détaillées"
 echo ""
-echo "🎉 Martin va bientôt être humilié publiquement sur internet!" 
+echo "🎉 Laurie va bientôt être humilié publiquement sur internet!" 

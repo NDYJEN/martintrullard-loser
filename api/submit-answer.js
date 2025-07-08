@@ -38,7 +38,7 @@ module.exports = function handler(req, res) {
       success: true,
       correct: true,
       correctAnswer: currentQ.correctAnswer,
-      message: "🔥 VOUS CONNAISSEZ PARFAITEMENT CE DÉCHET DE MARTIN! 🔥 Martin est HUMILIÉ et ANÉANTI! Cette ORDURE PATHÉTIQUE a été EXPOSÉE BRUTALEMENT! 💀🖕",
+                  message: "🔥 VOUS CONNAISSEZ PARFAITEMENT CE DÉCHET DE LAURIE! 🔥 Laurie est HUMILIÉE et ANÉANTIE! Cette ORDURE PATHÉTIQUE a été EXPOSÉE BRUTALEMENT! 💀🖕",
       gameFinished: true,
       finalScore: newScore,
       totalQuestions: gameData.questions.length
@@ -50,7 +50,7 @@ module.exports = function handler(req, res) {
     success: true,
     correct: true,
     correctAnswer: currentQ.correctAnswer,
-    message: "EXCELLENT! Continuez à CONNAÎTRE Martin! 🔥",
+                message: "EXCELLENT! Continuez à CONNAÎTRE Laurie! 🔥",
     gameFinished: false,
     currentScore: newScore,
     nextQuestion: nextQuestion + 1,

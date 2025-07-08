@@ -32,7 +32,7 @@ NODE_ENV=production
 2. **Se connecter avec GitHub**
 3. **Importer votre repo :**
    ```
-   https://github.com/NDYJEN/martintrullard-loser
+   https://github.com/NDYJEN/lauriewlsh-loser
    ```
 4. **Configuration :**
    - **Framework Preset :** `Other`
@@ -111,12 +111,12 @@ Après déploiement, votre site sera accessible :
 
 ## 🎨 **DOMAINE CUSTOM**
 
-### **Ajouter martintrullard-loser.com.fr :**
+### **Ajouter lauriewlsh-loser.com.fr :**
 
 1. **Dans Vercel Dashboard :**
    - Aller dans Settings → Domains
-   - Ajouter `martintrullard-loser.com.fr`
-   - Ajouter `www.martintrullard-loser.com.fr`
+   - Ajouter `lauriewlsh-loser.com.fr`
+   - Ajouter `www.lauriewlsh-loser.com.fr`
 
 2. **Chez votre registrar de domaine :**
    ```
@@ -179,7 +179,7 @@ git push origin main
 vercel --prod
 
 # Test live
-curl https://martintrullard-game.vercel.app/api/health
+curl https://lauriewlsh-game.vercel.app/api/health
 ```
 
 ---
@@ -192,4 +192,4 @@ Après le déploiement Vercel :
 - **💀 Contenu :** BRUTAL et MÉCHANT
 - **⚡ Performance :** Serverless scaling automatique
 
-**Martin va être HUMILIÉ sur Internet avec une performance MAXIMALE ! 🔥** 
+**Laurie va être HUMILIÉ sur Internet avec une performance MAXIMALE ! 🔥** 

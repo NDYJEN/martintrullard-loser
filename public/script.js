@@ -332,10 +332,10 @@ class GameController {
     }
     
     static showGameResult(response) {
-        // Le joueur gagne toujours, Martin est toujours le perdant
+        // Le joueur gagne toujours, Laurie est toujours le perdant
         const isWinner = true;
         
-        // Mettre à jour l'icône SANS écraser la photo de Martin
+        // Mettre à jour l'icône SANS écraser la photo de Laurie
         elements.resultIcon.className = `result-icon winner`;
         
         // Ajouter un trophée AVANT la photo (sans écraser le contenu existant)
@@ -471,5 +471,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Focus sur le champ nom au démarrage
     elements.playerNameInput.focus();
     
-    console.log('🎮 MartinTrullard.com Game Frontend initialized!');
+    console.log('🎮 LaurieWlsh.com Game Frontend initialized!');
 }); 

@@ -1,6 +1,6 @@
 # 🔥 GUIDE COMPLET : DÉPLOYER LE SITE MARTINTRULLARD.COM SUR SERVEUR
 
-## 🎯 OBJECTIF : Mettre le jeu de DESTRUCTION de Martin en ligne
+## 🎯 OBJECTIF : Mettre le jeu de DESTRUCTION de Laurie en ligne
 
 ### 🌐 **OPTIONS DE DÉPLOIEMENT RECOMMANDÉES**
 
@@ -102,29 +102,29 @@ sudo apt install nginx
 ### **C2. Déployer le Code**
 ```bash
 # Cloner le repo sur le serveur
-git clone https://github.com/NDYJEN/martintrullard-loser.git
-cd martintrullard-loser
+git clone https://github.com/NDYJEN/lauriewlsh-loser.git
+cd lauriewlsh-loser
 
 # Installer les dépendances backend
 cd backend
 npm install
 
 # Démarrer avec PM2
-pm2 start server.js --name "martintrullard-backend"
+pm2 start server.js --name "lauriewlsh-backend"
 pm2 startup
 pm2 save
 ```
 
 ### **C3. Configuration Nginx**
 ```nginx
-# /etc/nginx/sites-available/martintrullard.com
+# /etc/nginx/sites-available/lauriewlsh.com
 server {
     listen 80;
-    server_name martintrullard-loser.com.fr www.martintrullard-loser.com.fr;
+    server_name lauriewlsh-loser.com.fr www.lauriewlsh-loser.com.fr;
     
     # Frontend (fichiers statiques)
     location / {
-        root /home/user/martintrullard-loser/frontend;
+        root /home/user/lauriewlsh-loser/frontend;
         index index.html;
         try_files $uri $uri/ /index.html;
     }
@@ -143,7 +143,7 @@ server {
 
 ```bash
 # Activer le site
-sudo ln -s /etc/nginx/sites-available/martintrullard.com /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/lauriewlsh.com /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 ```
@@ -152,7 +152,7 @@ sudo systemctl reload nginx
 
 ## 🔒 **ÉTAPE 2 : CONFIGURATION DOMAINE**
 
-### **Pour martintrullard-loser.com.fr :**
+### **Pour lauriewlsh-loser.com.fr :**
 
 1. **Acheter le domaine** (chez OVH, Gandi, etc.)
 
@@ -166,7 +166,7 @@ A       www     [IP_DE_VOTRE_SERVEUR]
 3. **SSL avec Let's Encrypt (VPS) :**
 ```bash
 sudo apt install certbot python3-certbot-nginx
-sudo certbot --nginx -d martintrullard-loser.com.fr -d www.martintrullard-loser.com.fr
+sudo certbot --nginx -d lauriewlsh-loser.com.fr -d www.lauriewlsh-loser.com.fr
 ```
 
 ---
@@ -182,7 +182,7 @@ const CONFIG = {
     getBackendURL: function() {
         // REMPLACER par l'URL de votre backend
         return 'https://votre-backend.railway.app/api';
-        // ou 'https://martintrullard-loser.com.fr/api' pour VPS
+        // ou 'https://lauriewlsh-loser.com.fr/api' pour VPS
     }
 };
 ```
@@ -203,12 +203,12 @@ NODE_ENV=production
 curl https://votre-backend.railway.app/api/health
 
 # Tester le site complet
-curl -I https://martintrullard-loser.com.fr
+curl -I https://lauriewlsh-loser.com.fr
 
 # Vérifier les logs
 # Railway : voir dashboard
 # Render : voir dashboard  
-# VPS : pm2 logs martintrullard-backend
+# VPS : pm2 logs lauriewlsh-backend
 ```
 
 ---
@@ -223,7 +223,7 @@ curl -I https://martintrullard-loser.com.fr
 4. **Modifier config.js** avec l'URL Railway
 5. **Netlify :** Déployer frontend → Configurer domaine custom
 6. **Acheter domaine** et pointer vers Netlify
-7. **TESTER** : martintrullard-loser.com.fr
+7. **TESTER** : lauriewlsh-loser.com.fr
 
 ### **🔥 COMMANDES RAPIDES**
 ```bash
@@ -246,10 +246,10 @@ cd frontend && netlify deploy --prod --dir .
 ## 💀 **VOTRE SITE SERA EN LIGNE !**
 
 **✅ Backend API :** `https://votre-app.railway.app/api`  
-**✅ Frontend :** `https://martintrullard-loser.com.fr`  
+**✅ Frontend :** `https://lauriewlsh-loser.com.fr`  
 **✅ Theme :** Hot Pink + Black + Leopard Print  
 **✅ Contenu :** BRUTAL et MÉCHANT comme demandé  
 
-### **🎯 Martin sera DÉTRUIT EN LIGNE 24/7 !**
+### **🎯 Laurie sera DÉTRUIT EN LIGNE 24/7 !**
 
-Le jeu sera accessible partout dans le monde pour HUMILIER Martin brutalement ! 🔥💀 
+Le jeu sera accessible partout dans le monde pour HUMILIER Laurie brutalement ! 🔥💀 

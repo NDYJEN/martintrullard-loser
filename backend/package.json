@@ -1,7 +1,7 @@
 {
-  "name": "martintrullard-game-backend",
+  "name": "lauriewlsh-game-backend",
   "version": "1.0.0",
-  "description": "Backend pour le jeu martintrullard.com",
+  "description": "Backend pour le jeu lauriewlsh.com",
   "main": "server.js",
   "engines": {
     "node": ">=14.0.0"
@@ -18,7 +18,7 @@
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
-  "keywords": ["game", "web", "martin"],
-  "author": "Martin Trullard",
+  "keywords": ["game", "web", "laurie"],
+  "author": "Laurie Wlsh",
   "license": "MIT"
 } 

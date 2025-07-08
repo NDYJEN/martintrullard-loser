@@ -1,4 +1,4 @@
-# ⚡ Déploiement Rapide - martintrullard-loser.com.fr
+# ⚡ Déploiement Rapide - lauriewlsh-loser.com.fr
 
 ## 🚀 **3 ÉTAPES SIMPLES**
 
@@ -13,7 +13,7 @@ Le script vous demandera votre URL GitHub repository.
 1. Aller sur [railway.app](https://railway.app)
 2. Se connecter avec GitHub
 3. "New Project" → "Deploy from GitHub repo"
-4. Sélectionner votre repository `martintrullard-game`
+4. Sélectionner votre repository `lauriewlsh-game`
 5. Railway détecte automatiquement Node.js ✅
 6. Votre backend sera sur : `https://votre-nom.railway.app`
 
@@ -27,7 +27,7 @@ Le script vous demandera votre URL GitHub repository.
 ## 🌍 **CONFIGURER LE DOMAINE PERSONNALISÉ**
 
 ### **Acheter le domaine (10 minutes)**
-- [OVH.com](https://ovh.com) : `martintrullard-loser.com.fr` (~12€/an)
+- [OVH.com](https://ovh.com) : `lauriewlsh-loser.com.fr` (~12€/an)
 - Alternatives si pris : `.fr`, `.com`, `-game.com`
 
 ### **Configurer DNS (5 minutes)**
@@ -44,7 +44,7 @@ Cible: 75.2.60.5
 
 ### **Configurer Netlify (2 minutes)**
 1. Dans Netlify → Domain settings
-2. Add custom domain : `martintrullard-loser.com.fr`
+2. Add custom domain : `lauriewlsh-loser.com.fr`
 3. SSL/TLS certificate : Auto (gratuit)
 
 ## 🔄 **MISE À JOUR URL BACKEND**
@@ -59,10 +59,10 @@ Puis redéployez sur Netlify (push vers GitHub → auto-deploy).
 ## ⏱️ **TEMPS TOTAL: ~30 MINUTES**
 
 ## 🎯 **RÉSULTAT**
-- ✅ Site public : `https://martintrullard-loser.com.fr`
+- ✅ Site public : `https://lauriewlsh-loser.com.fr`
 - ✅ HTTPS automatique
 - ✅ Déployé mondialement
-- ✅ Martin humilié publiquement ! 😈
+- ✅ Laurie humilié publiquement ! 😈
 
 ## 🆘 **SUPPORT RAPIDE**
 
@@ -82,4 +82,4 @@ curl https://votre-backend.railway.app/api/health
 
 ---
 
-**🎉 En 30 minutes, Martin sera la risée d'internet !** 
+**🎉 En 30 minutes, Laurie sera la risée d'internet !** 

@@ -1,8 +1,8 @@
-# 🚀 Guide de Déploiement - martintrullard-loser.com.fr
+# 🚀 Guide de Déploiement - lauriewlsh-loser.com.fr
 
 ## 📋 Vue d'ensemble
 
-Pour rendre le site accessible sur `https://martintrullard-loser.com.fr`, nous devons :
+Pour rendre le site accessible sur `https://lauriewlsh-loser.com.fr`, nous devons :
 
 1. **Déployer le Backend** sur un service cloud
 2. **Déployer le Frontend** sur un service cloud  
@@ -52,7 +52,7 @@ Pour rendre le site accessible sur `https://martintrullard-loser.com.fr`, nous d
 
 3. **Mise à jour de l'URL Backend :**
    - Une fois le backend déployé, mettez à jour `frontend/config.js`
-   - Remplacez `https://martintrullard-backend.railway.app/api` par votre vraie URL
+   - Remplacez `https://lauriewlsh-backend.railway.app/api` par votre vraie URL
 
 ### Option B: Vercel (Alternative)
 
@@ -72,11 +72,11 @@ Pour rendre le site accessible sur `https://martintrullard-loser.com.fr`, nous d
    - [Namecheap](https://www.namecheap.com)
 
 2. **Rechercher et acheter :**
-   - Vérifiez la disponibilité de `martintrullard-loser.com.fr`
+   - Vérifiez la disponibilité de `lauriewlsh-loser.com.fr`
    - Si non disponible, essayez des alternatives :
-     - `martintrullard-loser.fr`
+     - `lauriewlsh-loser.fr`
      - `martin-loser.com`
-     - `martintrullard-game.com`
+     - `lauriewlsh-game.com`
 
 ### Configurer le DNS
 
@@ -97,7 +97,7 @@ Pour rendre le site accessible sur `https://martintrullard-loser.com.fr`, nous d
 
 3. **Dans Netlify :**
    - Allez dans Domain Settings
-   - Add custom domain: `martintrullard-loser.com.fr`
+   - Add custom domain: `lauriewlsh-loser.com.fr`
    - Activez le SSL automatique
 
 ## 🔄 **Étape 4: Configuration Finale**
@@ -130,10 +130,10 @@ Voici les commandes pour déployer rapidement :
 # 1. Créer un repository Git
 git init
 git add .
-git commit -m "Initial commit: Jeu Martin"
+git commit -m "Initial commit: Jeu Laurie"
 
 # 2. Pousser vers GitHub
-git remote add origin https://github.com/VOTRE-USERNAME/martintrullard-game.git
+git remote add origin https://github.com/VOTRE-USERNAME/lauriewlsh-game.git
 git push -u origin main
 
 # 3. Le reste se fait via les interfaces web de Railway et Netlify
@@ -143,7 +143,7 @@ git push -u origin main
 
 Une fois terminé, vous aurez :
 
-- **Frontend** : `https://martintrullard-loser.com.fr`
+- **Frontend** : `https://lauriewlsh-loser.com.fr`
 - **Backend** : `https://votre-backend.railway.app`
 - **SSL** : Certificat HTTPS automatique
 - **CDN** : Distribution mondiale rapide
@@ -175,4 +175,4 @@ Une fois terminé, vous aurez :
 
 ---
 
-**Une fois déployé, Martin sera humilié publiquement sur internet ! 😈** 
+**Une fois déployé, Laurie sera humilié publiquement sur internet ! 😈** 

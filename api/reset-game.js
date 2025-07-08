@@ -25,6 +25,6 @@ module.exports = function handler(req, res) {
   
   res.status(200).json({
     success: true,
-    message: "Jeu réinitialisé! Prêt à CONNAÎTRE Martin à nouveau! 🔥"
+            message: "Jeu réinitialisé! Prêt à CONNAÎTRE Laurie à nouveau! 🔥"
   });
 }; 

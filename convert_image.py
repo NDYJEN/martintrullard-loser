@@ -74,7 +74,7 @@ def main():
         
         # Mettre à jour le HTML automatiquement
         if update_html_with_image(base64_string):
-            print("🎉 Votre photo de Martin est maintenant dans le jeu!")
+            print("🎉 Votre photo de Laurie est maintenant dans le jeu!")
             print("🌐 Actualisez votre navigateur pour voir le résultat.")
         else:
             print("📋 Voici le code base64 à copier manuellement:")

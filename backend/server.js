@@ -15,61 +15,61 @@ const gameData = {
   questions: [
     {
       id: 1,
-      question: "Comment Martin se comporte-t-il en général ? 🤡",
-      correctAnswer: "Martin est chelou même ChatGPT swipe à gauche",
+      question: "Comment Laurie se comporte-t-elle en général ? 🤡",
+      correctAnswer: "Laurie est chelou même ChatGPT swipe à gauche",
       options: [
-        "Martin est chelou même ChatGPT swipe à gauche",
-        "Martin est FANTASTIQUE dans ses rêves",
-        "Martin est BEAU quand il est TRES LOIN",
-        "Martin est POPULAIRE dans les groupes \"ne pas inviter\""
+        "Laurie est chelou même ChatGPT swipe à gauche",
+        "Laurie est FANTASTIQUE dans ses rêves",
+        "Laurie est BELLE quand elle est TRES LOIN",
+        "Laurie est POPULAIRE dans les groupes \"ne pas inviter\""
       ],
-      hints: ["Même l'IA le fuit...", "Chelou au niveau cosmique 🤖"]
+      hints: ["Même l'IA la fuit...", "Chelou au niveau cosmique 🤖"]
     },
     {
       id: 2,
-      question: "Quelle est la vérité sur la vie sociale de Martin ? 💀",
-      correctAnswer: "Martin s'est fait ghoster par un chatbot",
+      question: "Quelle est la vérité sur la vie sociale de Laurie ? 💀",
+      correctAnswer: "Laurie s'est fait ghoster par un chatbot",
       options: [
-        "Martin s'est fait ghoster par un chatbot",
-        "Martin a déjà dit \"je t'aime\" à une story Insta",
-        "Martin a essayé de googler \"comment ouvrir Google\"",
-        "Martin commence ses conversations par \"T'aimes les bad boys ?\""
+        "Laurie s'est fait ghoster par un chatbot",
+        "Laurie a déjà dit \"je t'aime\" à une story Insta",
+        "Laurie a essayé de googler \"comment ouvrir Google\"",
+        "Laurie commence ses conversations par \"T'aimes les bad boys ?\""
       ],
-      hints: ["Même les robots l'évitent...", "Rejeté par l'intelligence artificielle 🤖"]
+      hints: ["Même les robots l'évitent...", "Rejetée par l'intelligence artificielle 🤖"]
     },
     {
       id: 3,
-      question: "Que fait Martin pour impressionner ? 🚗",
-      correctAnswer: "Martin pose avec une voiture qui appartient à son cousin",
+      question: "Que fait Laurie pour impressionner ? 🚗",
+      correctAnswer: "Laurie pose avec une voiture qui appartient à son cousin",
       options: [
-        "Martin pose avec une voiture qui appartient à son cousin",
-        "Martin a reçu un \"Tu corresponds pas à mes critères\" de l'appli elle-même",
-        "Martin a demandé à une fille \"tu veux venir voir mes stories enregistrées ?\"",
-        "Martin parle à une fille, son Wi-Fi coupe par honte"
+        "Laurie pose avec une voiture qui appartient à son cousin",
+        "Laurie a reçu un \"Tu corresponds pas à mes critères\" de l'appli elle-même",
+        "Laurie a demandé à une fille \"tu veux venir voir mes stories enregistrées ?\"",
+        "Laurie parle à une fille, son Wi-Fi coupe par honte"
       ],
       hints: ["Mensonge sur quatre roues...", "Pas sa caisse, pas son succès 🚗"]
     },
     {
       id: 4,
-      question: "Quel est le bilan amoureux de Martin ? 💔",
-      correctAnswer: "Martin a un seul match sur Tinder : une erreur système",
+      question: "Quel est le bilan amoureux de Laurie ? 💔",
+      correctAnswer: "Laurie a un seul match sur Tinder : une erreur système",
       options: [
-        "Martin a un seul match sur Tinder : une erreur système",
-        "Martin a été friendzoned par sa cousine",
-        "Martin a un QI à un chiffre et il est fier",
-        "Martin pense qu'il est un cadeau, personne ne l'a commandé"
+        "Laurie a un seul match sur Tinder : une erreur système",
+        "Laurie a été friendzonée par sa cousine",
+        "Laurie a un QI à un chiffre et elle est fière",
+        "Laurie pense qu'elle est un cadeau, personne ne l'a commandée"
       ],
       hints: ["Même les algorithmes se trompent...", "Bug informatique = seule chance 💻"]
     },
     {
       id: 5,
-      question: "Comment Martin voit-il sa propre personne ? 🪞",
-      correctAnswer: "Martin s'aime fort. Quelqu'un devait le faire",
+      question: "Comment Laurie voit-elle sa propre personne ? 🪞",
+      correctAnswer: "Laurie s'aime fort. Quelqu'un devait le faire",
       options: [
-        "Martin croit que les filles le fuient parce qu'elles sont timides",
-        "Le cadeau de Martin en soirée? Rentrer chez lui",
-        "Martin a un miroir, mais il mérite pas cette souffrance",
-        "Martin s'aime fort. Quelqu'un devait le faire"
+        "Laurie croit que les filles la fuient parce qu'elles sont timides",
+        "Le cadeau de Laurie en soirée? Rentrer chez elle",
+        "Laurie a un miroir, mais elle mérite pas cette souffrance",
+        "Laurie s'aime fort. Quelqu'un devait le faire"
       ],
       hints: ["Auto-amour par défaut...", "Personne d'autre ne le fait 💝"]
     }
@@ -102,7 +102,7 @@ app.post('/api/start-game', (req, res) => {
   
   res.json({
     success: true,
-    message: `PRÉPAREZ-VOUS ${gameState.playerName}! DÉTRUISEZ cette MERDE de Martin SANS PITIÉ!`,
+    message: `PRÉPAREZ-VOUS ${gameState.playerName}! DÉTRUISEZ cette MERDE de Laurie SANS PITIÉ!`,
     gameState: {
       currentQuestion: gameState.currentQuestion,
       totalQuestions: gameState.totalQuestions,
@@ -171,7 +171,7 @@ app.post('/api/submit-answer', (req, res) => {
   if (gameState.currentQuestion >= gameState.totalQuestions) {
     gameState.gameFinished = true;
     
-    // Le joueur gagne toujours, Martin est toujours le perdant
+    // Le joueur gagne toujours, Laurie est toujours la perdante
     const winner = gameState.playerName;
     
     return res.json({
@@ -182,7 +182,7 @@ app.post('/api/submit-answer', (req, res) => {
       totalQuestions: gameState.totalQuestions,
       winner: winner,
       isPlayerWinner: true,
-      message: `🔥 VOUS AVEZ DÉTRUIT CE DÉCHET DE MARTIN! 🔥 Score: ${gameState.score}/${gameState.totalQuestions}. Cette ORDURE PATHÉTIQUE a été ANÉANTIE! Martin est un RATÉ TOTAL qui mérite d'être HUMILIÉ BRUTALEMENT! 💀🖕`
+      message: `🔥 VOUS AVEZ DÉTRUIT CE DÉCHET DE LAURIE! 🔥 Score: ${gameState.score}/${gameState.totalQuestions}. Cette ORDURE PATHÉTIQUE a été ANÉANTIE! Laurie est une RATÉE TOTALE qui mérite d'être HUMILIÉE BRUTALEMENT! 💀🖕`
     });
   }
   
@@ -225,13 +225,13 @@ app.post('/api/reset-game', (req, res) => {
 app.get('/api/health', (req, res) => {
   res.json({
     success: true,
-    message: "Backend martintrullard.com fonctionne!",
+    message: "Backend lauriewlsh.com fonctionne!",
     timestamp: new Date().toISOString()
   });
 });
 
 // Démarrage du serveur
 app.listen(PORT, () => {
-  console.log(`🎮 Serveur martintrullard.com démarré sur le port ${PORT}`);
+  console.log(`🎮 Serveur lauriewlsh.com démarré sur le port ${PORT}`);
   console.log(`🌐 API disponible sur http://localhost:${PORT}/api`);
 }); 
