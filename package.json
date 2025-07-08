@@ -1,0 +1,25 @@
+{
+  "name": "lauriewlsh-loser",
+  "version": "1.0.0",
+  "description": "LaurieWlsh.com - Quiz interactif avec thème zebra rose et noir",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "serve": "node backend/server.js"
+  },
+  "keywords": ["quiz", "game", "laurie", "wlsh", "zebra", "pink"],
+  "author": "LaurieWlsh Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
